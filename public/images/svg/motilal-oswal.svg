@@ -1,14 +1,1 @@
-<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="14.5" cy="14.5" r="14.5" fill="url(#paint0_radial)"/>
-<path d="M24 21L23.9442 20.328L22.902 20.1936C22.5298 20.136 22.3809 19.56 22.2878 16.4112L22.0645 10.344C22.0645 10.0944 22.1948 9.8256 22.5112 9.7872L23.7767 9.672L23.8325 9H19.7196L16.6675 17.9856H16.5744L13.4293 9H9.1861L9.24194 9.672L10.3586 9.8832C10.9355 10.0368 11.1588 10.5168 11.103 11.6112L10.861 16.3344C10.6749 19.848 10.4702 20.136 10.098 20.1936L9.05583 20.328L9 21H13.0385L12.9826 20.328L11.9218 20.1936C11.5496 20.1552 11.5496 19.8288 11.6985 16.3344L11.9404 10.632H12.1638L15.6811 20.616H16.5744L20.1849 10.2096H20.3151L20.5385 16.4112C20.6501 19.3872 20.5385 20.136 20.1663 20.1936L19.1241 20.328L19.0682 21H24Z" fill="#373435"/>
-<path d="M9 24H25.5L24.5 25H9V24Z" fill="#373435"/>
-<defs>
-<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20 8) rotate(131.424) scale(22.6716)">
-<stop stop-color="#FFFEFB"/>
-<stop offset="0.241156" stop-color="#FFF9BD"/>
-<stop offset="0.579156" stop-color="#FFF10B"/>
-<stop offset="0.841495" stop-color="#FFB31A"/>
-<stop offset="1" stop-color="#FFEE13"/>
-</radialGradient>
-</defs>
-</svg>
+<svg fill="none" height="29" viewBox="0 0 29 29" width="29" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><radialGradient id="a" cx="0" cy="0" gradientTransform="matrix(-15.00012032 16.99993638 -16.99993638 -15.00012032 20 8)" gradientUnits="userSpaceOnUse" r="1"><stop offset="0" stop-color="#fffefb"/><stop offset=".241156" stop-color="#fff9bd"/><stop offset=".579156" stop-color="#fff10b"/><stop offset=".841495" stop-color="#ffb31a"/><stop offset="1" stop-color="#ffee13"/></radialGradient><circle cx="14.5" cy="14.5" fill="url(#a)" r="14.5"/><g fill="#373435"><path d="m24 21-.0558-.672-1.0422-.1344c-.3722-.0576-.5211-.6336-.6142-3.7824l-.2233-6.0672c0-.2496.1303-.5184.4467-.5568l1.2655-.1152.0558-.672h-4.1129l-3.0521 8.9856h-.0931l-3.1451-8.9856h-4.2432l.05584.672 1.11666.2112c.5769.1536.8002.6336.7444 1.728l-.242 4.7232c-.1861 3.5136-.3908 3.8016-.763 3.8592l-1.04217.1344-.05583.672h4.0385l-.0559-.672-1.0608-.1344c-.3722-.0384-.3722-.3648-.2233-3.8592l.2419-5.7024h.2234l3.5173 9.984h.8933l3.6105-10.4064h.1302l.2234 6.2016c.1116 2.976 0 3.7248-.3722 3.7824l-1.0422.1344-.0559.672z"/><path d="m9 24h16.5l-1 1h-15.5z"/></g></svg>
