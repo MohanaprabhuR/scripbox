@@ -13,7 +13,9 @@ module.exports = {
     maxHeight: {
       'full' : '100%',
       'screen' : '100vh',
-      '3/4' : '625px'
+      '3/4': '625px',
+      'xl': '11.25rem',
+      'lg':'12.25rem'
     },
     minWidth: {
       '0' : '0',
@@ -35,7 +37,8 @@ module.exports = {
       'md':'28rem',
       'sm': '30rem',
       'lg':'32rem',
-      'xl':'36rem',
+      'xl': '36rem',
+      'xll': '40rem',
       '2xl': '43rem',
       '3xl': '48rem',
       '4xl': '56rem',

@@ -1,0 +1,1157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+  <link rel="stylesheet" href="/build/tailwind.css">
+  <title>Scripbox</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+      <header id="header" class="fixed top-0 z-50 w-full py-2 bg-white shadow-sm site-header header-fixed">
+        <div class="container px-4 mx-auto">
+          <nav class="flex items-center justify-between navbar lap:flex-wrap">
+            <div class="flex items-center nav-barand lap:order-none">
+            <h1><a href="#">
+            <figure>
+              <img src="images/svg/logo.svg" alt="Scripbox">
+            </figure></a></h1>
+            <p class="absolute pl-3 text-base font-medium text-gray-800 lap:hidden xl:text-sm">Taxation of Mutual Funds: How mutual
+              funds are taxed in India
+            </p>
+            </div>
+            <div class="nav-items lap:hidden lap:order-2 lap:w-full">
+              <div class="flex enroll-toggle align-items-center w-100">
+                <ul class="flex navbar-collapse lap:w-full lap:flex-col">
+                  <li class="lap:text-center lap:py-3">
+                    <a href="#"
+                      class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-2 lap:mr-0 ">Personal Finance</a>
+                  </li>
+                  <li class="lap:text-center lap:py-3"><a href="#"
+                      class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-2 lap:mr-0 lap:text-center">Investment Planning</a></li>
+                  <li class="lap:text-center lap:py-3"><a href="#"
+                      class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-2 lap:mr-0 lap:text-center">Tax</a></li>
+                  <li class="lap:text-center lap:py-3"><a href="#"
+                      class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-2 lap:mr-0 lap:text-center">Retirement</a></li>
+                  <li class="lap:text-center lap:py-3"><a href="#"
+                      class="text-sm font-medium text-gray-600">Loans & EMI</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="flex items-center lap:order-1">
+              <div class="pr-5 search-body xl:pr-2 ">
+                <form method="get" id="searchform" action="" role="search">
+                  <div class="flex items-center input-group">
+                    <span class="text-center search-icon">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.7606 7.50537C13.7606 10.9601 10.96 13.7607 7.50529 13.7607C4.0506 13.7607 1.25 10.9601 1.25 7.50537C1.25 4.05061 4.0506 1.25 7.50529 1.25C10.96 1.25 13.7606 4.05061 13.7606 7.50537Z"
+                        stroke="#343434" stroke-width="2" />
+                      <rect width="2.41844" height="7.84274" rx="1.20922"
+                        transform="matrix(0.707103 -0.707111 0.707103 0.707111 10.4943 12.2042)" fill="#343434" />
+                    </svg>
+
+                    </span>
+                    <input class="w-0 text-sm font-medium text-gray-800 placeholder-gray-600 transition outline-none" type="text" placeholder="Search" value="">
+                  </div>
+                </form>
+              
+              </div>
+              <a href="#"
+                class="inline-block px-3 py-2 text-sm font-semibold leading-none text-white transition bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 mob:hidden">Subscribe</a>
+              <button class="hidden ml-3 focus:outline-none navbar-toggler collapsed lap:block mob:ml-0" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bg-orange-500 icon-bar top-bar"></span>
+                <span class="bg-orange-500 icon-bar middle-bar"></span>
+                <span class="bg-orange-500 icon-bar bottom-bar"></span>
+              </button>
+              
+            </div>
+          </nav>
+        </div>
+      </header>
+  <section class="pt-8 pb-24 mt-12 bg-orange-100 hero-section tab:pb-16 mob:py-12">
+    <div class="container px-4 mx-auto">
+      <div class="flex items-center lap:flex-wrap lap:justify-center">
+      <div class="w-3/4 pr-4 hero-info lap:w-full lap:pr-0 mob:text-center">  
+        <div class="flex items-center mob:pb-3 mob:justify-center">
+              <a href="#">
+                <figure>
+                  <img src="images/svg/icon-home.svg" alt="Home Icon">
+                </figure>
+              </a>
+              <span class="px-2">
+                <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.834327 7.7656C0.68435 7.61557 0.600098 7.41213 0.600098 7.2C0.600098 6.98786 0.68435 6.78442 0.834327 6.6344L3.46873 4L0.834327 1.3656C0.6886 1.21471 0.607965 1.01263 0.609787 0.802875C0.61161 0.593118 0.695745 0.392468 0.844072 0.244141C0.992398 0.095815 1.19305 0.0116796 1.40281 0.0098569C1.61256 0.00803417 1.81464 0.08867 1.96553 0.234396L5.16553 3.4344C5.3155 3.58442 5.39976 3.78786 5.39976 4C5.39976 4.21213 5.3155 4.41557 5.16553 4.5656L1.96553 7.7656C1.8155 7.91557 1.61206 7.99983 1.39993 7.99983C1.1878 7.99983 0.984349 7.91557 0.834327 7.7656Z"
+                    fill="#B3B3B3" />
+                </svg>
+              </span>
+              <a href="#" class="text-sm font-semibold text-gray-600">Mutual Funds</a>
+              <span class="pl-2">
+                <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.834327 7.7656C0.68435 7.61557 0.600098 7.41213 0.600098 7.2C0.600098 6.98786 0.68435 6.78442 0.834327 6.6344L3.46873 4L0.834327 1.3656C0.6886 1.21471 0.607965 1.01263 0.609787 0.802875C0.61161 0.593118 0.695745 0.392468 0.844072 0.244141C0.992398 0.095815 1.19305 0.0116796 1.40281 0.0098569C1.61256 0.00803417 1.81464 0.08867 1.96553 0.234396L5.16553 3.4344C5.3155 3.58442 5.39976 3.78786 5.39976 4C5.39976 4.21213 5.3155 4.41557 5.16553 4.5656L1.96553 7.7656C1.8155 7.91557 1.61206 7.99983 1.39993 7.99983C1.1878 7.99983 0.984349 7.91557 0.834327 7.7656Z"
+                    fill="#B3B3B3" />
+                </svg>
+              </span>
+          </div>
+          <a href="#"
+            class="table px-3 py-2 mt-4 text-base font-semibold leading-none text-orange-500 transition bg-white rounded-md mob:m-0 mob:p-0 mob:bg-transparent mob:mx-auto hover:bg-gray-100">Investment
+            Planning</a>
+          <h1 class="w-full py-5 text-5xl font-extrabold leading-none tracking-tight font-cambon max-w-xll font-ballinger tab:text-3xl mob:pt-3 lap:w-full mob:pb-0">Taxation of Mutual Funds: How mutual funds are taxed in India</h1>
+          <div class="flex items-center text-base text-black author-info tab:hidden">
+            By
+            <figure class="w-6 h-6 mx-2 rounded-full">
+              <img src="images/author.png" alt="Author Image">
+            </figure>
+            <span class="relative pr-4 font-semibold">Sandeep Prabhakaran</span>
+            Updated on Aug 20, 2020
+          </div>
+        </div>
+        <div class="w-3/12 lap:w-full mob:pt-8">
+          <figure class="max-w-xs ml-auto lap:mx-auto">
+              <img src="images/post-feature-img4.png" alt="Post Feature Image" class="w-full">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-16 lap:py-10">
+    <div class="container px-4 mx-auto">
+      <div class="w-10/12 lap:w-full">
+        <div class="max-w-3xl text-center tab:max-w-full mob:text-left">
+          <div class="overflow-x-auto">
+            <div class="inline-block min-w-full py-2 align-middle">        
+              <div class="flex items-center entity tab:pt-8">
+                <a href="#" class="table px-3 py-2 mr-2 text-sm font-medium leading-none text-blue-700 whitespace-no-wrap transition bg-blue-100 rounded-md hover:bg-blue-200 ">Mutual Funds</a>
+                <a href="#" class="table px-3 py-2 mr-2 text-sm font-medium leading-none text-blue-700 whitespace-no-wrap transition bg-blue-100 rounded-md hover:bg-blue-200 ">Capital Gains</a>
+                <a href="#" class="table px-3 py-2 mr-2 text-sm font-medium leading-none text-blue-700 whitespace-no-wrap transition bg-blue-100 rounded-md hover:bg-blue-200 ">Dividend Income</a>
+                <a href="#" class="table px-3 py-2 mr-2 text-sm font-medium leading-none text-blue-700 whitespace-no-wrap transition bg-blue-100 rounded-md hover:bg-blue-200 ">Floater Funds</a>
+                <a href="#" class="table px-3 py-2 text-sm font-medium leading-none text-blue-700 whitespace-no-wrap transition bg-blue-100 rounded-md hover:bg-blue-200 ">Overnight Funds</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full"><span class="float-left pr-3 text-5xl font-extrabold leading-none font-cambon">T</span>axation on mutual funds is a complex topic. Taxes paid on your mutual fund investments vastly depend on
+        factors such as what kind of funds you have invested in, the duration of your investment, and which income tax slab you
+        belong to.</p>
+        <blockquote class="relative float-right pt-3 my-8 ml-16 text-xl font-normal text-gray-900 tab:float-none max-w-xs1 blockquote-orange font-regularitalic tab:max-w-full tab:mx-0 tab:mb-0">While you carefully plan your mutual fund investments, the one variable that tends to get overlooked is mutual fund
+        taxation.</blockquote>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">If you have read any of our blog posts here on Scripbox, you are no stranger to our suggestion of <a href="#" class="underline">investing in mutual
+        funds.</a></p>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">We have always suggested that <a href="#" class="underline">mutual fund investments</a> are a great way to get started with your investment journey.</p>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">Tax on mutual funds can get slightly confusing. Taxes paid on your mutual fund investments vastly depends on factors
+        such as what kind of funds you have invested in, the duration of your investment, and which income tax slab you belong
+        to.</p>
+        <h2 class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 tab:max-w-full font-ballinger tab:pt-10 tab:text-2xl">Types of Mutual Funds in India</h2>
+        <p class="max-w-2xl pt-4 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full">You may have heard of words like Debt funds, Equity funds, ELSS funds, Index funds, Liquid funds, Income funds being
+        used often. However, mutual funds are broadly categorized as Equity funds, Debt funds, and Hybrid funds.</p>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">In this article, we want to discuss mutual fund taxation and help you understand how your mutual fund returns are taxed.</p>
+        <blockquote class="relative max-w-2xl pt-3 mt-8 text-xl font-normal text-gray-900 tab:max-w-full blockquote-orange font-regularitalic">
+        Two essential factors determine how mutual funds are taxed in India. One of them is the type of mutual fund scheme, and
+        the other is the duration of your investment.
+        </blockquote>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">Investing in mutual funds is one of the best ways to make sure that you have enough money for all your financial
+        requirements for years to come. Hence, to have a clear picture of the returns on your mutual funds, you need to know how
+        much you will be paying in taxes.</p>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">If you ever wondered if income from mutual funds is taxable or exempt from taxes, we hope you find your answers here.</p>
+        <p class="max-w-2xl pt-8 text-base font-semibold leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">Let’s begin.</p>
+        <h3 class="max-w-2xl pt-16 text-2xl font-bold leading-none text-gray-900 tab:max-w-full font-ballinger tab:pt-10 tab:text-xl">Capital Gains</h3>
+        <p class="max-w-2xl pt-4 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full">When you sell your assets at a profit, the total profit earned is called a <a href="#" class="underline">capital gain.</a><span class="inline-flex items-center justify-center w-5 h-5 ml-1 text-xs text-gray-700 bg-gray-200 rounded-full">2</span> Capital is nothing but the
+        principal investment that was made to purchase your mutual fund units. Let’s look at an example to understand what
+        mutual funds <a href="#" class="underline">capital gains</a> mean.</p>
+        <figure class="max-w-2xl mt-16 tab:max-w-full tab:mt-10">
+          <img src="images/post-img.png" alt="Post Image" class="w-full">
+          <figcaption class="pt-4 leading-none text-center text-gray-500">Illustration by Fago Studio</figcaption>
+        </figure>
+        <h4 class="max-w-2xl pt-16 text-lg font-semibold leading-none text-gray-900 tab:max-w-full tab:pt-10 mob:pt-8 mob:text-lg">Example illustration</h4>
+        <p class="max-w-2xl pt-4 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full">Let’s assume you purchased a few units of a mutual fund for Rs. 1000. Your capital expenditure, in this case, is the
+        principal amount of Rs. 1000. If the fund generated a return of 10%, the value of your investment is now Rs. 1100. So
+        the capital gain on this investment is Rs. 100. Therefore, the capital gain is total income minus the initial capital.</p>
+        <div class="flex float-right p-4 mt-8 mb-8 ml-16 bg-gray-100 rounded-lg max-w-md1 capital-calculator tab:float-none tab:max-w-full tab:mt-5 tab:ml-0 tab:mb-0">
+            <figure class="w-full max-w-xmm">
+              <img src="images/svg/icon-calculator.svg" alt="Icon Calculator">
+            </figure>
+            <div class="pl-5">
+              <h5 class="text-base font-semibold leading-none text-gray-900">Capital Gains Calculator</h5>
+              <p class="pt-2 text-sm font-normal leading-normal text-gray-700">Find out by how much your money will grow if you save in an FD, given a particular interest rate.</p>
+
+            </div>
+        </div>
+        <p class="max-w-2xl pt-8 text-base font-semibold leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">The <a href="#" class="underline">capital gain</a>, Rs. 100, in this case, will be the taxable income.</p>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">Also, it is important to note that one incurs capital gain tax only when it is sold. If you continue to stay invested,
+        you will not have to pay mutual funds capital gains tax.</p>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">Capital gains tax in India depends on the mutual fund scheme and the tenure of the investment. Based on your choice of
+        investments, you will have to pay <a href="#" class="underline">short-term capital gains tax </a>(STCG) or <a href="#" class="underline">long term capital gains tax</a>f (LTCG).</p>
+        <blockquote class="relative max-w-2xl p-2 pl-5 mt-8 text-base font-normal text-gray-900 tab:max-w-full blockquote-blue">
+        While you carefully plan your mutual fund investments, the one variable that tends to get overlooked is mutual fund
+        taxation.
+        <footer class="max-w-2xl pt-2 font-normal text-gray-500 tab:max-w-full font-regularitalic">George Orwell, Investor</footer>
+        </blockquote>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">We will delve into both of these momentarily. In the meantime, let’s look at how a mutual fund dividend payout impacts
+        your taxes.</p>
+        <div class="max-w-2xl px-8 pt-6 pb-12 mt-12 rounded-md shadow-lg tab:max-w-full cta-loan mob:py-8 mob:px-6">  
+              <div class="flex items-center tab:flex-wrap">
+                <div class="flex w-full max-w-sm pr-4 cta-loan-wrapper tab:max-w-full tab:pr-0 tab:pb-4 tab:flex-row-reverse">
+                  <figure class="w-full max-w-xss">
+                    <img src="images/svg/cta-long-term.svg" alt="Cta Long Term">
+                  </figure>
+                  <div class="pl-6 description tab:pl-0 tab:pr-4">
+                    <h5 class="text-xl font-bold text-gray-900 mob:text-lg">Build Long Term Wealth</h5>
+                    <p class="pt-1 text-sm font-normal leading-none leading-snug text-gray-600">Diversify your risks and invest in the top funds selected by Scripbox from the large-cap category</p>
+                  </div>
+                </div>
+                <a href="#"
+                  class="table px-8 py-3 text-sm font-medium leading-none text-white transition bg-green-500 rounded-md tab:hidden hover:bg-green-600">Invest Now</a>
+              </div>
+              <div class="flex justify-between pt-10 tab:flex-wrap tab:pt-0">
+                <ul class="tab:w-full">
+                  <li class="flex items-center text-sm leading-tight text-gray-900">
+                    <figure class="pr-4">
+                      <img src="images/svg/icon-returns.svg" alt="Icon Returns">
+                    </figure>Indicative returns of 12-14% annually</li>
+                  <li class="flex items-center pt-3 text-sm leading-tight text-gray-900 tab:hidden">
+                    <figure class="pr-4">
+                      <img src="images/svg/icon-invesment.svg" alt="Invesment">
+                    </figure>Investment horizon of 5+ years
+                  </li>
+                  <li class="flex items-center pt-3 text-sm leading-tight text-gray-900 tab:hidden">
+                    <figure class="pr-4">
+                      <img src="images/svg/icon-non-lock.svg" alt="Non Lock">
+                    </figure>No lock-in of your funds
+                  </li>
+                </ul>
+                <ul class="tab:w-full">
+                  <li class="flex items-center text-sm leading-tight text-gray-900 tab:pt-3">
+                    <figure class="pr-4">
+                      <img src="images/svg/icon-grow-wealth.svg" alt="Grow Wealth">
+                    </figure>Grow wealth, retirement, kids education
+                  </li>
+                  <li class="flex items-center pt-3 text-sm leading-tight text-gray-900">
+                    <figure class="pr-4">
+                      <img src="images/svg/icon-one-click.svg" alt="One click">
+                    </figure>One-click investing and tracking
+                  </li>
+                  <li class="flex items-center pt-3 text-sm leading-tight text-gray-900 tab:hidden">
+                    <figure class="pr-4">
+                      <img src="images/svg/icon-zero-fees.svg" alt="Zero fees">
+                    </figure>Zero fees for all your investments
+                  </li>
+                  <a href="#"
+                    class="hidden table px-8 py-3 text-sm font-medium leading-none text-white bg-green-500 rounded-md tab:w-full tab:text-center tab:mt-5 tab:block">Invest
+                    Now</a>
+                </ul>
+              </div>
+        </div>
+        <h3 class="max-w-2xl pt-16 text-2xl font-bold leading-none text-gray-900 tab:max-w-full font-ballinger tab:text-xl tab:pt-10">Dividend Income</h3>
+        <p class="max-w-2xl pt-4 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full">If you invest in a mutual fund with a dividend payout option, you will receive timely payments in the form of dividends.</p>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">Whenever a dividend option mutual fund makes a profit, that profit gets distributed among investors (as per the number
+        of units held by each investor) as dividend payments.</p>
+              <div id="table-scroll" class="relative z-10 h-64 max-w-2xl mt-8 overflow-auto table-scroll tab:max-w-full">
+                <table class="relative w-full min-w-full m-auto table-wrapper">
+                  <thead>
+                    <tr class="border-b border-gray-200">
+                      <th
+                        class="sticky top-0 left-0 z-20 px-2 py-3 text-sm font-normal leading-4 text-left text-gray-500 bg-white border-b border-gray-200">
+                        Fund
+                      </th>
+                      <th
+                        class="sticky top-0 px-2 py-3 text-sm font-normal leading-4 text-left text-center text-gray-500 bg-white mob:min-w-8">
+                        DDT Base Rate
+                      </th>
+                      <th
+                        class="sticky top-0 px-2 py-3 text-sm font-normal leading-4 text-left text-center text-gray-500 bg-white mob:min-w-8">
+                        Surcharge
+                      </th>
+                      <th
+                        class="sticky top-0 px-2 py-3 text-sm font-normal leading-4 text-left text-center text-gray-500 bg-white mob:min-w-8">
+                        Cess
+                      </th>
+                      <th class="sticky top-0 px-2 py-3 text-sm font-normal leading-4 text-left text-right text-gray-500 bg-white mob:min-w-8">
+                        Effective DDT
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                      1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                      Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                      10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                      1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                      Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                      10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                      1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                      Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                      10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                      1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                      Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                      10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Equity Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        1.2%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        0.448%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap mob:min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    <tr class="border-b border-gray-200">
+                      <td
+                        class="sticky left-0 py-3 pl-2 pr-6 text-base font-semibold leading-none text-gray-800 whitespace-no-wrap bg-white border-b border-gray-200">
+                        Debt Mutual Funds
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        25%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        3%
+                      </td>
+                      <td class="py-3 text-base leading-none text-center text-gray-800 whitespace-no-wrap min-w-8">
+                        1.120%
+                      </td>
+                      <td class="py-3 text-base leading-none text-right text-gray-800 whitespace-no-wrap min-w-8">
+                        10%
+                      </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+
+             <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">A surcharge of 12% on base rate and cess of 4% on base + surcharge rate is included in DDT<span
+            class="inline-flex items-center justify-center w-5 h-5 ml-1 text-xs text-gray-700 bg-gray-200 rounded-full">3</span></p>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">From April 1st, 2020, mutual funds dividends are taxed in the hands of investors at their income tax slab rate. This is
+        done to reduce the burden on small investors. Dividend income will be treated as normal income and added to the total
+        income and is taxable at the income tax slab rate.</p>
+         <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">Additionally, mutual funds dividends paid out to a person is more than INR 5,000 is subject to TDS (tax deducted at
+                source) of 10%.<span class="inline-flex items-center justify-center w-5 h-5 ml-1 text-xs text-gray-700 bg-gray-200 rounded-full">4</span> If the PAN is linked to Aadhar, this rate is applicable. In its absence, the TDS will be 20% <span class="inline-flex items-center justify-center w-5 h-5 ml-1 text-xs text-gray-700 bg-gray-200 rounded-full">5</span></p>
+        <p class="max-w-2xl pt-8 text-base font-normal leading-relaxed text-gray-800 tab:pt-5 tab:max-w-full">We will delve into both of these momentarily. In the meantime, let’s look at how a mutual fund dividend payout impacts
+        your taxes.</p>
+        <div class="flex justify-center max-w-2xl pt-16 tab:max-w-full tab:pt-10">
+              <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
+              <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
+              <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
+        </div>
+        <h2 class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 tab:max-w-full font-ballinger tab:pt-10 mob:text-2xl">Features of Floater Funds</h2>
+        <blockquote
+          class="relative float-right pt-3 my-8 ml-16 text-xl font-normal text-orange-400 max-w-xs1 blockquote-orange font-regular tab:max-w-full tab:float-none tab:mt-10 tab:mb-0 tab:ml-0">
+          While you carefully plan your mutual fund investments, the one variable that tends to get overlooked is mutual fund
+          taxation.</blockquote>
+        <p class="max-w-2xl pt-4 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full">The diversification of a portfolio is essential in the long term. The portfolio of consists of both floating rate
+        instruments and fixed-income securities. However, 65% of their primary assets are invested in floating rate securities.
+        These instruments yield better returns during rising interest rate movement. The remaining part of the fund consists of
+        fixed-income securities.</p>
+        <h6 class="max-w-2xl pt-8 text-xs font-bold tracking-widest text-gray-900 uppercase tab:pt-5 tab:max-w-full">Top Floater Funds</h6>
+        <p class="max-w-2xl pt-2 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full">The top floater funds that Scripbox has chosen for 2020.</p>
+        <div class="max-w-2xl pt-6 tab:max-w-full fund-card">
+           <a href="#" class="block px-2 py-4 shadow-sm">
+             <div class="flex items-center justify-between mob:flex-wrap">
+                <div class="flex items-center flex-auto ">
+                  <small class="w-1 h-12 mr-2 bg-orange-500 rounded-lg"></small>
+                  <figure class="w-full pr-4 max-w-xm">
+                    <img src="images/svg/motilal-oswal.svg" alt="Motilal Oswal">
+                  </figure>
+                  <div class="fund-description">
+                      <h6 class="font-semibold leading-none text-gray-900">Motilal Oswal Long Term Equity Fund</h6>
+                      <p class="pt-2 text-xs font-normal text-gray-500">Diversified</p>
+                  </div>
+                </div>
+                <div class="flex mob:w-full mob:justify-center mob:pt-4">
+                  <div class="ml-6 mob:ml-2">
+                    <p class="text-sm font-normal leading-none text-gray-900">₹ 1,000</p><small class="pt-2 text-sm font-normal leading-none text-gray-400">Min. Amount</small>
+                  </div>
+                  <div class="ml-6 mob:ml-2">
+                    <p class="text-sm font-normal leading-none text-gray-900">12%</p><small class="pt-2 text-sm font-normal leading-none text-gray-400">Yield to Maturity</small>
+                  </div>
+                </div>
+             </div>
+          </a>
+          <a href="#" class="block px-2 py-4 shadow-sm">
+            <div class="flex items-center justify-between mob:flex-wrap">
+              <div class="flex items-center flex-auto">
+                <figure class="w-full pr-4 max-w-xm">
+                  <img src="images/svg/logo-mirae.svg" alt="Logo Mirae">
+                </figure>
+                <div class="fund-description">
+                  <h6 class="font-semibold leading-none text-gray-900">Mirae Asset Tax Saver Fund</h6>
+                  <p class="pt-2 text-xs font-normal text-gray-500">Diversified</p>
+                </div>
+              </div>
+              <div class="flex mob:w-full mob:justify-center mob:pt-4">
+                <div class="ml-6 mob:ml-2">
+                  <p class="text-sm font-normal leading-none text-gray-900">₹ 1,000</p><small
+                    class="pt-2 text-sm font-normal leading-none text-gray-400">Min. Amount</small>
+                </div>
+                <div class="ml-6 mob:ml-2">
+                  <p class="text-sm font-normal leading-none text-gray-900">12%</p><small
+                    class="pt-2 text-sm font-normal leading-none text-gray-400">Yield to Maturity</small>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block px-2 py-4">
+            <div class="flex items-center justify-between mob:flex-wrap">
+              <div class="flex items-center flex-auto">
+                <figure class="w-full pr-4 max-w-xm">
+                  <img src="images/svg/logo-mirae.svg" alt="Logo Mirae">
+                </figure>
+                <div class="fund-description">
+                  <h6 class="font-semibold leading-none text-gray-900">Mirae Asset Tax Saver Fund</h6>
+                  <p class="pt-2 text-xs font-normal text-gray-500">Diversified</p>
+                </div>
+              </div>
+              <div class="flex mob:w-full mob:justify-center mob:pt-4">
+                <div class="ml-6 mob:ml-2">
+                  <p class="text-sm font-normal leading-none text-gray-900">₹ 1,000</p><small
+                    class="pt-2 text-sm font-normal leading-none text-gray-400">Min. Amount</small>
+                </div>
+                <div class="ml-6 mob:ml-2">
+                  <p class="text-sm font-normal leading-none text-gray-900">12%</p><small
+                    class="pt-2 text-sm font-normal leading-none text-gray-400">Yield to Maturity</small>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block p-3 mt-6 text-sm font-semibold leading-5 text-center text-gray-800 transition bg-gray-100 rounded-md mob:bg-orange-500 mob:text-white hover:bg-gray-200 mob:hover:bg-orange-600">See all Floater Funds</a>
+        </div>
+        <div class="flex justify-center pt-16 tab:pt-10 mob:pt-8">
+          <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
+          <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
+        </div>
+        <h2 class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 tab:max-w-full font-ballinger tab:pt-10 tab:text-2xl">Advantages of investing in midcap funds</h2>
+        <p class="max-w-2xl pt-4 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full">Mid cap equity mutual funds have good potential to generate significant returns in the long term. Though they have a
+        certain amount of risk associated with them, investing in midcap funds has the following advantages:</p>
+        <ul class="max-w-2xl pt-6 pl-4 tab:max-w-full list-style">
+          <li class="relative pb-4 pl-4 text-base font-normal text-gray-800"><span class="font-semibold">Wealth creation:</span> A midcap company has good growth potential.</li>
+          <li class="relative pb-4 pl-4 text-base font-normal text-gray-800"><span class="font-semibold">Diversification:</span> They help investors in diversifying their investment portfolio. The investment is spread across various mid cap stocks
+          and sectors.</li>
+          <li class="relative pb-4 pl-4 text-base font-normal text-gray-800"><span class="font-semibold">Liquidity:</span>
+            Mid cap mutual funds are open ended equity funds. Investments in these funds can be easily liquidated.</li>
+            <li class="relative pb-4 pl-4 text-base font-normal text-gray-800"><span class="font-semibold">Professional Management:</span>
+              These are professionally managed by a qualified and experienced fund manager</li>
+        </ul>
+        <div class="flex justify-center max-w-2xl pt-16 tab:max-w-full tab:pt-10">
+          <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
+          <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
+          <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
+        </div>
+        <h2 class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 tab:max-w-full font-ballinger tab:pt-10 tab:text-2xl">Benefits of investing in overnight funds</h2>
+        <p class="max-w-2xl pt-4 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full">Mid cap equity mutual funds have good potential to generate significant returns in the long term. Though they have a
+        certain amount of risk associated with them, investing in midcap funds has the following advantages:</p>
+        <ol class="max-w-2xl pt-6 pl-4 tab:max-w-full ">
+          <li class="relative pb-4 pl-4 text-base font-normal text-gray-800">Overnight funds are highly liquid investments. They are considered equivalent to cash. Investors can enter and exit
+          within the trading hours.</li>
+          <li class="relative pb-4 pl-4 text-base font-normal text-gray-800">Since these funds invest in securities with one-day maturity, the chance of default is almost nil.</li>
+          <li class="relative pb-4 pl-4 text-base font-normal text-gray-800">These are highly liquid. Therefore, in times of a crisis, investors can quickly liquidate overnight funds.</li>
+          <li class="relative pb-4 pl-4 text-base font-normal text-gray-800">They help investors in diversifying their investment portfolio. The investment is spread across various mid cap stocks
+          and sectors.</li>
+          </ol>
+          <div class="flex justify-center max-w-2xl pt-16 tab:max-w-full tab:pt-10">
+            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
+            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
+            <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
+          </div>
+          <h2 class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 tab:max-w-full font-ballinger tab:pt-10 tab:text-2xl">How to invest in Mutual Funds</h2>
+          <p class="max-w-2xl pt-4 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full">Overnight funds invest in securities maturing in one day. They provide an excellent opportunity for corporates to park
+          their excess/idle money in them than a bank current account. Their benefits include high liquidity, low expense ratio,
+          short investment horizon and low-interest rate risk.</p>
+          <div class="relative max-w-2xl p-8 mt-8 bg-gray-100 rounded-lg tab:max-w-full funds-list tab:p-6 mob:py-8 mob:px-4">
+            <p class="absolute inline-flex py-2 pl-6 pr-2 font-semibold leading-none text-white bg-green-400 how-to font-base">How-To</p>
+             <ol>
+               <li class="relative pb-6 pl-12 mob:pl-8">
+                 <h5 class="text-lg font-semibold text-gray-900 mob:text-base">Create an account</h5>
+                 <p class="pt-2 text-base font-normal text-gray-800">Scripbox algorithms help you choose the best mutual funds to invest now in India from over 8,000 choices based on their
+                historical performance</p>
+                </li>
+                <li class="relative pb-6 pl-12 mob:pl-8">
+                  <h5 class="text-lg font-semibold text-gray-900 mob:text-base">Complete paperless KYC</h5>
+                  <p class="pt-2 text-base font-normal text-gray-800">Scripbox algorithms help you choose the best mutual funds to invest now in India from over 8,000 choices based on their
+                  historical performance</p>
+                </li>
+                <li class="relative pb-6 pl-12 mob:pl-8">
+                  <h5 class="text-lg font-semibold text-gray-900 mob:text-base">Invest online & transfer</h5>
+                  <p class="pt-2 text-base font-normal text-gray-800">Scripbox algorithms help you choose the best mutual funds to invest now in India from over 8,000 choices based on their
+                  historical performance</p>
+                </li>
+                <li class="relative pl-12 mob:pl-8">
+                  <h5 class="text-lg font-semibold text-gray-900 mob:text-base">Track your investments</h5>
+                  <p class="pt-2 text-base font-normal text-gray-800">Scripbox algorithms help you choose the best mutual funds to invest now in India from over 8,000 choices based on their
+                  historical performance</p>
+                </li>
+                
+             </ol>
+          </div>
+          <div class="flex justify-center max-w-2xl pt-16 tab:max-w-full tab:pt-10">
+            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
+            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
+            <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
+          </div>
+          <h2 class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 tab:max-w-full font-ballinger tab:pt-10 tab:text-2xl">Conclusion</h2>
+          <p class="max-w-2xl pt-4 text-base font-normal leading-relaxed text-gray-800 tab:max-w-full">Overnight funds invest in securities maturing in one day. They provide an excellent opportunity for corporates to park
+          their excess/idle money in them than a bank current account. Their benefits include high liquidity, low expense ratio,
+          short investment horizon and low-interest rate risk. However, low risk means low returns. Overnight funds category
+          accounts for close to 7% of the total assets in the Debt fund assets.</p>
+          <h3 class="max-w-2xl pt-16 text-2xl font-bold leading-none text-gray-900 tab:max-w-full tab:pt-10 ">Frequently Asked Questions</h3>
+           <div class="max-w-2xl pt-4 pb-32 tab:max-w-full faq-list tab:pb-16">
+              <div class="px-3 py-4 shadow-sm faq-lists faq-active">
+                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">How are mutual funds better than FDs?</h4>
+                <div class="pt-4 faq-content default"><p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow your money, and meet your life goals.</p></div>
+              </div>
+              <div class="px-3 py-4 shadow-sm faq-lists">
+                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">Are mutual funds better than stocks?</h4>
+                <div class="hidden pt-4 faq-content">
+                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow your money,
+                    and meet your life goals.</p>
+                </div>
+              </div>
+              <div class="px-3 py-4 shadow-sm faq-lists">
+                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">How does Scripbox pick funds?</h4>
+                <div class="hidden pt-4 faq-content">
+                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow your money,
+                    and meet your life goals.</p>
+                </div>
+              </div>
+              <div class="px-3 py-4 shadow-sm faq-lists">
+                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">What is a Systematic Investment Plan (SIP)?</h4>
+                <div class="hidden pt-4 faq-content">
+                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow your money,
+                    and meet your life goals.</p>
+                </div>
+              </div>
+              <div class="px-3 py-4 shadow-sm faq-lists">
+                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">How does Scripbox pick funds?</h4>
+                <div class="hidden pt-4 faq-content">
+                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow your money,
+                    and meet your life goals.</p>
+                </div>
+              </div>
+              <div class="px-3 py-4 faq-lists">
+                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">When should I start investing?</h4>
+                <div class="hidden pt-4 faq-content">
+                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow your money,
+                    and meet your life goals.</p>
+                </div>
+              </div>
+           </div> 
+          <div class="overflow-x-auto">
+            <div class="inline-block min-w-full py-2 align-middle">
+           <div class="flex max-w-2xl mb-4 tab:max-w-full tags">
+             <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Investment Planning</a>
+             <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Personal Finance</a>
+             <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Tax</a>
+             <a href="#" class="px-3 py-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Capital Gains</a>
+           </div>
+           </div>
+           </div>
+           <div class="max-w-2xl tab:max-w-full source-list funds-list">
+            <div class="flex items-center py-3 border-t border-gray-200">
+              <figure class="pr-2">
+                  <img src="images/svg/icon-calendar.svg" alt="Icon Calender">
+              </figure>
+              <p class="text-base font-normal leading-normal text-gray-600">Posted on Jul 24, 2020</p>
+            </div>
+            <div class="flex items-center py-3 border-t border-gray-200">
+              <figure class="pr-2">
+                <img src="images/svg/icon-time.svg" alt="Icon Time">
+              </figure>
+              <p class="text-base font-normal leading-normal text-gray-600">Last updated on Aug 20, 2020</p>
+            </div>
+            <div class="border-t border-gray-200 faq-lists">
+            <div class="relative flex items-center pt-3 cursor-pointer faq-heading">
+              <figure class="pr-2">
+                <img src="images/svg/icon-verified.svg" alt="Icon Verified">
+              </figure>
+              <p class="text-base font-normal leading-normal text-gray-600">See all 6 sources / citations</p>
+            </div>
+            <div class="hidden pt-4 faq-content">
+            <ol>
+              <li class="relative items-center pb-4 pl-6 text-sm font-normal leading-normal text-gray-600">Source: AMFI Data, Survey Feb 2020 
+                <a href="#" class="inline-flex pl-2">
+                  <figure>
+                    <img src="images/svg/icon-link.svg" alt="Icon Link">
+                  </figure>
+                </a>
+              </li>
+              <li class="relative items-center pl-6 text-sm font-normal leading-normal text-gray-600">
+                Some other data source that probably spans multiple lines from say SEBI
+                <a href="#" class="inline-block pl-2">
+                  <figure>
+                    <img src="images/svg/icon-link.svg" alt="Icon Link">
+                  </figure>
+                </a>
+              </li>
+            </ol>
+            </div>
+            </div>
+          </div>
+          <div class="max-w-2xl px-8 py-6 mt-12 bg-gray-100 rounded-lg tab:max-w-full mob:pt-0">
+            <div class="flex items-center mob:flex-wrap mob:justify-center ">
+              <figure class="w-full max-w-xsm mob:-mt-4">
+                  <img src="images/avatar.png" alt="">
+              </figure>
+              <div class="pl-8 mob:pl-0 mob:pt-5 mob:text-center">
+                <h6 class="text-base font-semibold leading-none text-gray-900">Sandeep Prabhakaran</h6>
+                <p class="pt-2 text-base font-normal leading-normal text-gray-600">Sandeep is Scripbox Head of Marketing and plans to stay with the company to infinity and beyond.</p>
+                <div class="flex items-center pt-4">
+                  <a href="#" class="px-3 py-2 text-sm font-medium leading-tight text-gray-800 bg-white rounded-md mob:w-full mob:text-center ">See all articles by
+                    Sandeep</a>
+                  <div class="flex items-center mob:hidden">
+                    <a href="#" class="pl-5">
+                        <figure>
+                          <img src="images/svg/icon-twitter.svg" alt="Icon Twitter">
+                        </figure>
+                    </a>
+                    <a href="#" class="pl-5">
+                      <figure>
+                        <img src="images/svg/icon-facebook.svg" alt="Icon Facebook">
+                      </figure>
+                    </a>
+                    <a href="#" class="pl-5">
+                      <figure>
+                        <img src="images/svg/icon-linked-in.svg" alt="Icon Linked-in">
+                      </figure>
+                    </a>
+                  </div>  
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="relative flex justify-between max-w-2xl px-8 pb-10 mt-16 bg-blue-100 rounded-lg tab:max-w-full subscribe mob:flex-wrap mob:pb-6 mob:px-4">
+            <div class="w-1/2 mob:w-full mob:flex mob:flex-wrap mob:justify-center mob:text-center">
+              <a href="#" class="table px-3 py-2 -mt-3 text-xs font-semibold leading-tight tracking-wide text-white uppercase bg-gray-900 rounded-md shadow-lg btn-invesment">Investment Insights</a>
+              <h3 class="pt-6 -mt-3 text-2xl font-extrabold leading-tight text-gray-900 font-cambon mob:text-2xl">Personal Finance & Investment Insights</h3>
+              <p class="pt-2 text-base font-normal leading-normal text-gray-600">Our weekly newsletter with finance tips and investment insights from our experts</p>
+            </div>
+            <div class="w-1/2 pt-10 pl-12 text-center mob:w-full mob:pl-0 mob:pt-6">
+              <input type="email" id="email" name="email" class="w-full px-4 py-3 font-normal leading-none text-gray-500 placeholder-gray-500 rounded-md shadow-lg focus:outline-none" placeholder="Email Address">
+              <a href="#"
+                class="block w-full p-3 mt-4 text-base font-semibold leading-tight tracking-wide text-center text-white transition bg-gray-900 bg-blue-600 rounded-md hover:bg-blue-700">Subscribe</a>
+              <p class="pt-2 text-xs font-normal leading-normal text-gray-500">Your <a href="#" class="underline">privacy</a> is important to us</p>
+            </div>
+          </div>
+          <div
+            class="relative flex justify-between max-w-2xl px-8 pb-10 mt-16 bg-blue-100 rounded-lg tab:max-w-full subscribe mob:flex-wrap mob:pb-6 mob:px-4">
+            <div class="w-full mx-auto text-center max-w-mdd mob:max-w-full">
+              <a href="#"
+                class="table px-3 py-2 mx-auto -mt-3 text-xs font-semibold leading-tight tracking-wide text-white uppercase bg-gray-900 rounded-md shadow-lg btn-invesment">Investment
+                Insights</a>
+              <h3 class="pt-6 text-2xl font-extrabold leading-tight text-gray-900 font-cambon mob:text-2xl">Personal Finance &
+                Investment Insights</h3>
+                <div class="flex mt-4 mob:flex-wrap">
+                  <input type="email" id="email" name="email"
+                    class="w-full px-4 py-3 font-normal leading-none text-gray-500 placeholder-gray-500 rounded-md shadow-lg focus:outline-none mob:w-full"
+                    placeholder="Email Address">
+                  <a href="#"
+                    class="block p-3 ml-3 text-base font-semibold leading-tight tracking-wide text-center text-white transition bg-gray-900 bg-blue-600 rounded-md mob:w-full mob:ml-0 mob:mt-4 hover:bg-blue-700">Subscribe</a>
+                </div>
+              <p class="pt-2 text-base font-normal leading-normal text-gray-600">Our weekly newsletter with finance tips and
+                investment insights from our experts</p>
+            
+              <p class="pt-2 text-xs font-normal leading-normal text-gray-500">Your <a href="#" class="underline">privacy</a> is
+                important to us</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          </section>
+          <section class="py-20 lap:pb-16 mob:pb-10">
+            <div class="container px-4 mx-auto">
+      <div class="flex items-center justify-between py-8 border-t border-b border-gray-200 related-topics tab:flex-wrap tab:py-6">
+        <h3 class="text-lg font-semibold leading-none text-gray-800 whitespace-no-wrap">Related Topics</h3>
+        <div class="pl-6 overflow-x-auto tab:pl-0">
+          <div class="inline-block min-w-full py-2 align-middle">
+        <div class="flex">
+          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Goals</a>
+          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Inflation</a>
+          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Investing Mistakes</a>
+          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Personal Growth</a>
+          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Coffee Can</a>
+          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Money</a>
+          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">SIP</a>
+          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Investing</a>
+          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition bg-gray-100 rounded-md hover:bg-gray-200">Personal Finance</a>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div class="pt-4 pb-12 mob:pb-6">
+        <h3 class="text-lg font-semibold leading-none text-gray-800 ">Continue Reading</h3>
+        <div class="flex justify-between lap:flex-wrap tab:justify-center">
+          <div class="w-full mt-4 mr-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post tab:mr-0 tab:mt-6">
+            <figure class="overflow-hidden max-h-lg mob:max-h-xl">
+              <img src="images/post-feature-img.png" alt="Post Feature Image">
+            </figure>
+            <div class="p-4">
+              <a href="#"><h4 class="text-xl font-bold leading-none text-gray-900 font-ballinger">Floater Funds- Meaning, Tyes, Features, Limitation, etc</h4></a>
+              <p class="pt-3 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to understand what
+              mutual funds capital gains mean.</p>
+            </div>
+          </div>
+          <div class="w-full mt-4 mr-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post tab:mr-0 tab:mt-6">
+            <figure class="overflow-hidden max-h-lg mob:max-h-xl">
+              <img src="images/post-feature-img2.png" alt="Post Feature Image">
+            </figure>
+            <div class="p-4">
+              <a href="#">
+                <h4 class="text-xl font-bold leading-none text-gray-900 font-ballinger">What is Long Term Capital Gain Tax?
+              </h4></a>
+              <p class="pt-3 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to understand what
+              mutual funds capital gains mean.</p>
+            </div>
+          </div>
+          <div class="w-full mt-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post tab:mr-0 tab:mt-6">
+            <figure class="overflow-hidden max-h-lg mob:max-h-xl">
+              <img src="images/post-feature-img3.png" alt="Post Feature Image">
+            </figure>
+            <div class="p-4">
+              <a href="#">
+                <h4 class="text-xl font-bold leading-none text-gray-900 font-ballinger">A Complete Guide to Mid Cap Mutual Funds
+              </h4></a>
+              <p class="pt-3 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the total
+                profit earned is called a capital gain. Capital is nothing but the
+                principal investment that was made to purchase your mutual fund units. Let’s look at an example to understand what
+                mutual funds capital gains mean.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center py-6 border-t border-b border-gray-200 cursor-pointer">
+        <figure>
+          <img src="images/icon-comments.png" alt="Comments Icon">
+        </figure>
+        <h5 class="pl-3 pr-2 text-lg font-semibold leading-none text-gray-800">Show comments <span class="font-normal">(24)</span></h5>
+        <figure>
+          <img src="images/svg/icon-down.svg" alt="Down Icon">
+        </figure>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
