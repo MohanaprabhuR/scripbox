@@ -4,7 +4,7 @@ module.exports = {
     screens: {
       'sm': { 'min': '640px', 'max': '767px' },
       'md': { 'min': '768px', 'max': '1023px' },
-      'lg': { 'min': '1024px', 'max': '1279px' },
+      'lg': { 'min': '1140px', 'max': '1279px' },
       'xl': { 'max': '1140px' },
       'lap': { 'max': '991px' },
       'tab': { 'max': '767px' },

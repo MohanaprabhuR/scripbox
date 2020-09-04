@@ -606,9 +606,9 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1140px) {
   .container {
-    max-width: 1024px;
+    max-width: 1140px;
   }
 }
 
@@ -22749,9 +22749,9 @@ ol>li::before {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1140px) {
     .sm\:container {
-      max-width: 1024px;
+      max-width: 1140px;
     }
   }
 
@@ -44386,9 +44386,9 @@ ol>li::before {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1140px) {
     .md\:container {
-      max-width: 1024px;
+      max-width: 1140px;
     }
   }
 
@@ -66006,7 +66006,7 @@ ol>li::before {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1140px) and (max-width: 1279px) {
   .lg\:container {
     width: 100%;
   }
@@ -66023,9 +66023,9 @@ ol>li::before {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1140px) {
     .lg\:container {
-      max-width: 1024px;
+      max-width: 1140px;
     }
   }
 
@@ -87660,9 +87660,9 @@ ol>li::before {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1140px) {
     .xl\:container {
-      max-width: 1024px;
+      max-width: 1140px;
     }
   }
 
@@ -109297,9 +109297,9 @@ ol>li::before {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1140px) {
     .lap\:container {
-      max-width: 1024px;
+      max-width: 1140px;
     }
   }
 
@@ -130934,9 +130934,9 @@ ol>li::before {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1140px) {
     .tab\:container {
-      max-width: 1024px;
+      max-width: 1140px;
     }
   }
 
@@ -152571,9 +152571,9 @@ ol>li::before {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1140px) {
     .mob\:container {
-      max-width: 1024px;
+      max-width: 1140px;
     }
   }
 
