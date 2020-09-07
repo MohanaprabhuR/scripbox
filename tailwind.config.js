@@ -1,14 +1,26 @@
 module.exports = {
   purge: ["./public/**/*.html"],
   theme: {
+    fontFamily: {
+      'sans': ['inter','-apple-system', 'BlinkMacSystemFont'],
+      'serif': ['Cambon','Georgia', 'Cambria'],
+    },
+    container: {
+      center: true,
+    },
     screens: {
-      'sm': { 'min': '640px', 'max': '767px' },
-      'md': { 'min': '768px', 'max': '1023px' },
-      'lg': { 'min': '1140px', 'max': '1279px' },
-      'xl': { 'max': '1140px' },
-      'lap': { 'max': '991px' },
-      'tab': { 'max': '767px' },
-      'mob': { 'max': '580px' },
+      'xl': {
+        'max': '1200px'
+      },
+      'lg': {
+        'max': '992px'
+      },
+      'md': {
+        'max': '768px'
+      },
+      'sm': {
+        'max': '576px'
+      },
     },
     maxHeight: {
       'full' : '100%',
@@ -24,12 +36,16 @@ module.exports = {
       '12': '12rem',
       'full':'100%'
     },
+    
     maxWidth: {
       'none': 'none',
-      'xmm': '1.75rem',
-      'xm' : '3rem',
-      'xss': '3.3125rem',
+      'xm1': '1.75rem',
+      'xm2' : '3rem',
+      'xm3': '3.3125rem',
       'xsm':'5rem',
+      'xsm1': '11.75rem',
+      'xm4': '15rem',
+      'xm5' :'18rem',
       'xs': '20rem',
       'xs1': '21rem',
       'mdd': '21.875rem',
@@ -53,5 +69,27 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    function ({
+      addComponents
+    }) {
+      addComponents({
+        '.container': {
+          width: '1140px',
+          '@screen xl': {
+            width: '960px',
+          },
+          '@screen lg': {
+            width: '720px',
+          },
+          '@screen md': {
+            width: '540px',
+          },
+          '@screen sm': {
+            width: 'auto',
+          },
+        }
+      })
+    },
+  ],
 };
