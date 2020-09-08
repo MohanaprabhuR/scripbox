@@ -200,8 +200,13 @@ ol>li::before {
     -o-border-radius: 6px 6px 0 0;
 }
 
+.blog-post:hover a,
+.blog-post:hover a > h4 {
+    color: #1971E4;
+}
+
 /* Header */
-.header-overlay .nav-items {
+.single-page-header.header-overlay .nav-items {
     display: none;
 }
 
