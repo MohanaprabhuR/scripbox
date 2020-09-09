@@ -11563,6 +11563,10 @@ video {
   max-width: none;
 }
 
+.max-w-class\=\"py-2\ text-sm\ font-medium\ leading-none\ text-gray-500\ hover\:text-gray-900\" {
+  max-width: 1.25rem;
+}
+
 .max-w-xm1 {
   max-width: 1.75rem;
 }
@@ -11579,8 +11583,12 @@ video {
   max-width: 4.5rem;
 }
 
-.max-w-xsm {
+.max-w-xm5 {
   max-width: 5rem;
+}
+
+.max-w-xsm {
+  max-width: 9.375rem;
 }
 
 .max-w-xsm1 {
@@ -22597,6 +22605,28 @@ ol>li::before {
   display: block;
 }
 
+.nav-items ul li:hover .sub-menu {
+  opacity: 1;
+  transform: translateY(13px);
+  -webkit-transform: translateY(13px);
+  -moz-transform: translateY(13px);
+  -ms-transform: translateY(13px);
+  -o-transform: translateY(13px);
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+}
+
+.sub-menu {
+  transform: translateY(-22rem);
+  -webkit-transform: translateY(-22rem);
+  -moz-transform: translateY(-22rem);
+  -ms-transform: translateY(-22rem);
+  -o-transform: translateY(-22rem);
+}
+
 /* Header Style End */
 
 .table-wrapper tr>th:first-child::after,
@@ -33607,6 +33637,10 @@ ol>li::before {
     max-width: none;
   }
 
+  .xl\:max-w-class\=\"py-2\ text-sm\ font-medium\ leading-none\ text-gray-500\ hover\:text-gray-900\" {
+    max-width: 1.25rem;
+  }
+
   .xl\:max-w-xm1 {
     max-width: 1.75rem;
   }
@@ -33623,8 +33657,12 @@ ol>li::before {
     max-width: 4.5rem;
   }
 
-  .xl\:max-w-xsm {
+  .xl\:max-w-xm5 {
     max-width: 5rem;
+  }
+
+  .xl\:max-w-xsm {
+    max-width: 9.375rem;
   }
 
   .xl\:max-w-xsm1 {
@@ -55248,6 +55286,10 @@ ol>li::before {
     max-width: none;
   }
 
+  .lg\:max-w-class\=\"py-2\ text-sm\ font-medium\ leading-none\ text-gray-500\ hover\:text-gray-900\" {
+    max-width: 1.25rem;
+  }
+
   .lg\:max-w-xm1 {
     max-width: 1.75rem;
   }
@@ -55264,8 +55306,12 @@ ol>li::before {
     max-width: 4.5rem;
   }
 
-  .lg\:max-w-xsm {
+  .lg\:max-w-xm5 {
     max-width: 5rem;
+  }
+
+  .lg\:max-w-xsm {
+    max-width: 9.375rem;
   }
 
   .lg\:max-w-xsm1 {
@@ -76889,6 +76935,10 @@ ol>li::before {
     max-width: none;
   }
 
+  .md\:max-w-class\=\"py-2\ text-sm\ font-medium\ leading-none\ text-gray-500\ hover\:text-gray-900\" {
+    max-width: 1.25rem;
+  }
+
   .md\:max-w-xm1 {
     max-width: 1.75rem;
   }
@@ -76905,8 +76955,12 @@ ol>li::before {
     max-width: 4.5rem;
   }
 
-  .md\:max-w-xsm {
+  .md\:max-w-xm5 {
     max-width: 5rem;
+  }
+
+  .md\:max-w-xsm {
+    max-width: 9.375rem;
   }
 
   .md\:max-w-xsm1 {
@@ -98530,6 +98584,10 @@ ol>li::before {
     max-width: none;
   }
 
+  .sm\:max-w-class\=\"py-2\ text-sm\ font-medium\ leading-none\ text-gray-500\ hover\:text-gray-900\" {
+    max-width: 1.25rem;
+  }
+
   .sm\:max-w-xm1 {
     max-width: 1.75rem;
   }
@@ -98546,8 +98604,12 @@ ol>li::before {
     max-width: 4.5rem;
   }
 
-  .sm\:max-w-xsm {
+  .sm\:max-w-xm5 {
     max-width: 5rem;
+  }
+
+  .sm\:max-w-xsm {
+    max-width: 9.375rem;
   }
 
   .sm\:max-w-xsm1 {

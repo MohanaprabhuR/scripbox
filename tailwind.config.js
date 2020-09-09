@@ -39,11 +39,13 @@ module.exports = {
 
     maxWidth: {
       'none': 'none',
+      'class="py-2 text-sm font-medium leading-none text-gray-500 hover:text-gray-900"': '1.25rem',
       'xm1': '1.75rem',
       'xm2': '3rem',
       'xm3': '3.3125rem',
       'xm4': '4.5rem',
-      'xsm': '5rem',
+      'xm5': '5rem',
+      'xsm': '9.375rem',  
       'xsm1': '11.75rem',
       'xsm2': '12.5rem',
       'xsm3': '15rem',
