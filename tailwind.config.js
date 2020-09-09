@@ -42,6 +42,7 @@ module.exports = {
       'xm1': '1.75rem',
       'xm2' : '3rem',
       'xm3': '3.3125rem',
+      'xm6':'4.5rem',
       'xsm':'5rem',
       'xsm1': '11.75rem',
       'xsm2': '12.5rem',
