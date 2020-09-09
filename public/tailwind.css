@@ -213,17 +213,6 @@ ol>li::before {
 
 .search-result .input-group input {
     width: 220px;
-    transition: all 0.25s;
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    -ms-transition: all 0.25s;
-    -o-transition: all 0.25s;
-
-}
-
-.nav-barand p {
-    transform: translateY(10px);
-    transition: all 0.25s;
 }
 
 .header-overlay .nav-barand p {
@@ -242,63 +231,38 @@ ol>li::before {
 
 }
 
-
-
-.icon-bar {
-    width: 22px;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-}
-
 .top-bar {
-    margin-left: 3px;
-    margin-right: 3px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transform-origin: 10% 10% 0;
     transform-origin: 10% 10% 0;
 }
 
-.middle-bar {
-    opacity: 0;
-}
-
 .bottom-bar {
-    margin-left: 3px;
-    margin-right: 3px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-transform-origin: 10% 90% 0;
     transform-origin: 10% 90% 0;
 }
 
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
 .navbar-toggler.collapsed .icon-bar {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-    margin-bottom: 4px;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
-.navbar-toggler.collapsed .middle-bar {
-    opacity: 1;
-    transform: translateX(13%);
-    -webkit-transform: translateX(13%);
-    -moz-transform: translateX(13%);
-    -ms-transform: translateX(13%);
-    -o-transform: translateX(13%);
-}
-
 .navbar-toggler .icon-bar {
-    display: block;
     width: 22px;
     height: 2px;
-    border-radius: 1px;
-    margin-bottom: 4px;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
@@ -306,6 +270,8 @@ ol>li::before {
 .menu-active .nav-items {
     display: block;
 }
+
+/* Header Style End */
 
 .table-wrapper tr>th:first-child::after,
 .table-wrapper tr>td:first-child::after {
@@ -346,15 +312,12 @@ ol>li::before {
     .search-result .input-group input {
         width: 80px;
     }
-}
 
-@media (max-width: 767px) {
     .how-to {
         left: 0px;
         top: -20px;
     }
 }
-
 @media (max-width: 580px) {
     .funds-list ol>li::before {
         width: 20px;
@@ -367,7 +330,6 @@ ol>li::before {
         top: 3px;
 
     }
-
     .search-result .input-group input {
         width: 100px;
     }

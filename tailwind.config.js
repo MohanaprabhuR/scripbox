@@ -2,8 +2,8 @@ module.exports = {
   purge: ["./public/**/*.html"],
   theme: {
     fontFamily: {
-      'sans': ['inter','-apple-system', 'BlinkMacSystemFont'],
-      'serif': ['Cambon','Georgia', 'Cambria'],
+      'sans': ['inter', '-apple-system', 'BlinkMacSystemFont'],
+      'serif': ['Cambon', 'Georgia', 'Cambria'],
     },
     container: {
       center: true,
@@ -23,38 +23,38 @@ module.exports = {
       },
     },
     maxHeight: {
-      'full' : '100%',
-      'screen' : '100vh',
+      'full': '100%',
+      'screen': '100vh',
       '3/4': '625px',
       'xl': '11.25rem',
-      'lg':'12.25rem'
+      'lg': '12.25rem'
     },
     minWidth: {
-      '0' : '0',
-      '8' : '8rem',
+      '0': '0',
+      '8': '8rem',
       '10': '10rem',
       '12': '12rem',
-      'full':'100%'
+      'full': '100%'
     },
-    
+
     maxWidth: {
       'none': 'none',
       'xm1': '1.75rem',
-      'xm2' : '3rem',
+      'xm2': '3rem',
       'xm3': '3.3125rem',
-      'xm6':'4.5rem',
-      'xsm':'5rem',
+      'xm4': '4.5rem',
+      'xsm': '5rem',
       'xsm1': '11.75rem',
       'xsm2': '12.5rem',
-      'xm4': '15rem',
-      'xm5' :'18rem',
+      'xsm3': '15rem',
+      'xsm4': '18rem',
       'xs': '20rem',
       'xs1': '21rem',
       'mdd': '21.875rem',
       'md1': '23.5rem',
-      'md':'28rem',
+      'md': '28rem',
       'sm': '30rem',
-      'lg':'32rem',
+      'lg': '32rem',
       'xl': '36rem',
       'xll': '40rem',
       '2xl': '43rem',
