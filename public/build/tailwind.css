@@ -11732,26 +11732,30 @@ video {
 }
 
 .max-w-2xl {
-  max-width: 43rem;
+  max-width: 42rem;
 }
 
 .max-w-3xl {
-  max-width: 45rem;
+  max-width: 43rem;
 }
 
 .max-w-4xl {
-  max-width: 48rem;
+  max-width: 45rem;
 }
 
 .max-w-5xl {
-  max-width: 56rem;
+  max-width: 48rem;
 }
 
 .max-w-6xl {
-  max-width: 64rem;
+  max-width: 56rem;
 }
 
 .max-w-7xl {
+  max-width: 64rem;
+}
+
+.max-w-8xl {
   max-width: 72rem;
 }
 
@@ -34003,26 +34007,30 @@ ol>li::before {
   }
 
   .xl\:max-w-2xl {
-    max-width: 43rem;
+    max-width: 42rem;
   }
 
   .xl\:max-w-3xl {
-    max-width: 45rem;
+    max-width: 43rem;
   }
 
   .xl\:max-w-4xl {
-    max-width: 48rem;
+    max-width: 45rem;
   }
 
   .xl\:max-w-5xl {
-    max-width: 56rem;
+    max-width: 48rem;
   }
 
   .xl\:max-w-6xl {
-    max-width: 64rem;
+    max-width: 56rem;
   }
 
   .xl\:max-w-7xl {
+    max-width: 64rem;
+  }
+
+  .xl\:max-w-8xl {
     max-width: 72rem;
   }
 
@@ -55853,26 +55861,30 @@ ol>li::before {
   }
 
   .lg\:max-w-2xl {
-    max-width: 43rem;
+    max-width: 42rem;
   }
 
   .lg\:max-w-3xl {
-    max-width: 45rem;
+    max-width: 43rem;
   }
 
   .lg\:max-w-4xl {
-    max-width: 48rem;
+    max-width: 45rem;
   }
 
   .lg\:max-w-5xl {
-    max-width: 56rem;
+    max-width: 48rem;
   }
 
   .lg\:max-w-6xl {
-    max-width: 64rem;
+    max-width: 56rem;
   }
 
   .lg\:max-w-7xl {
+    max-width: 64rem;
+  }
+
+  .lg\:max-w-8xl {
     max-width: 72rem;
   }
 
@@ -77703,26 +77715,30 @@ ol>li::before {
   }
 
   .md\:max-w-2xl {
-    max-width: 43rem;
+    max-width: 42rem;
   }
 
   .md\:max-w-3xl {
-    max-width: 45rem;
+    max-width: 43rem;
   }
 
   .md\:max-w-4xl {
-    max-width: 48rem;
+    max-width: 45rem;
   }
 
   .md\:max-w-5xl {
-    max-width: 56rem;
+    max-width: 48rem;
   }
 
   .md\:max-w-6xl {
-    max-width: 64rem;
+    max-width: 56rem;
   }
 
   .md\:max-w-7xl {
+    max-width: 64rem;
+  }
+
+  .md\:max-w-8xl {
     max-width: 72rem;
   }
 
@@ -99553,26 +99569,30 @@ ol>li::before {
   }
 
   .sm\:max-w-2xl {
-    max-width: 43rem;
+    max-width: 42rem;
   }
 
   .sm\:max-w-3xl {
-    max-width: 45rem;
+    max-width: 43rem;
   }
 
   .sm\:max-w-4xl {
-    max-width: 48rem;
+    max-width: 45rem;
   }
 
   .sm\:max-w-5xl {
-    max-width: 56rem;
+    max-width: 48rem;
   }
 
   .sm\:max-w-6xl {
-    max-width: 64rem;
+    max-width: 56rem;
   }
 
   .sm\:max-w-7xl {
+    max-width: 64rem;
+  }
+
+  .sm\:max-w-8xl {
     max-width: 72rem;
   }
 
