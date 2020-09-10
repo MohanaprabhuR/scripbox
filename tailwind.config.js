@@ -34,6 +34,7 @@ module.exports = {
       '8': '8rem',
       '10': '10rem',
       '12': '12rem',
+      '13':'13.5rem',
       'full': '100%'
     },
 
@@ -46,10 +47,10 @@ module.exports = {
       'xm4': '4.5rem',
       'xm5': '5rem',
       'xsm': '9.375rem',  
-      'xsm1': '11.75rem',
+      'xsm1': '11.375rem',
       'xsm2': '12.5rem',
       'xsm3': '15rem',
-      'xsm4': '18rem',
+      'xsm4': '18.4375rem',
       'xs': '20rem',
       'xs1': '21rem',
       'mdd': '21.875rem',
@@ -71,7 +72,11 @@ module.exports = {
       'screen-lg': '1024px',
       'screen-xl': '1280px'
     },
-    extend: {},
+    extend: {
+      spacing: {
+        '68':'25rem',
+      }
+    },
   },
   variants: {},
   plugins: [

@@ -281,14 +281,6 @@ ol>li::before {
     -o-transform: translateY(17px);
 }
 
-.sub-menu {
-    transform: translateY(-20rem);
-    -webkit-transform: translateY(-20rem);
-    -moz-transform: translateY(-20rem);
-    -ms-transform: translateY(-20rem);
-    -o-transform: translateY(-20rem);
-}
-
 /* Header Style End */
 
 .table-wrapper tr>th:first-child::after,
@@ -326,6 +318,11 @@ ol>li::before {
     -o-transition: all 200ms ease;
 }
 
+.post-img img {
+    max-width: initial !important;
+    width: calc(100% + 32px) !important;
+}
+
 @media (max-width: 1024px) {
     .search-result .input-group input {
         width: 80px;
@@ -352,5 +349,9 @@ ol>li::before {
 
     .search-result .input-group input {
         width: 100px;
+    }
+
+    .top-search-scroll {
+        width: calc(100% + 32px) !important;
     }
 }
