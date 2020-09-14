@@ -9,13 +9,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </head>
-<body>
-      <header id="header" class="fixed top-0 z-50 w-full py-2 bg-white shadow-sm site-header header-fixed ">
+<body class="antialiased">
+      
+      <header id="header" class="fixed top-0 z-50 w-full py-2 bg-white shadow-sm site-header header-fixed">
         <div class="container px-4">
           <nav class="flex items-center justify-between navbar lg:flex-wrap md:flex-row-reverse">
       
             <a href="#"
-              class="items-center hidden font-semibold leading-none text-gray-800 transition-all duration-200 rounded-md sm:flex md:flex">
+              class="items-center hidden font-semibold leading-none text-gray-800 transition-all duration-200 rounded-md search-mobile sm:flex md:flex">
               Subscribe
               <figure class="pl-1"><svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -24,14 +25,15 @@
                 </svg>
               </figure>
             </a>
-            <div class="flex items-center nav-barand lg:order-none">
+            <div class="flex items-center nav-brand lg:order-none">
               <h1 class="z-20 bg-white"><a href="#">
                   <figure>
                     <img src="images/svg/logo.svg" alt="Scripbox">
                   </figure>
                 </a></h1>
+      
             </div>
-            <div class="nav-items lg:hidden lg:order-2 lg:w-full">
+            <div class="z-10 nav-items lg:hidden lg:order-2 lg:w-full">
               <div class="flex enroll-toggle align-items-center w-100">
                 <ul class="flex navbar-collapse lg:w-full lg:flex-col">
                   <li class="lg:text-center lg:py-3">
@@ -54,11 +56,11 @@
               </div>
       
             </div>
-            <div class="relative flex items-center lg:order-1 md:flex-row-reverse">
-              <div class="pr-5 search-body xl:pr-2 md:absolute md:left-0 md:ml-8">
+            <div class="relative flex items-center lg:order-1 md:flex-row-reverse search-control">
+              <div class="pr-4 transition-all duration-200 search-body xl:pr-2">
                 <form method="get" id="searchform" action="" role="search">
-                  <div class="flex items-center input-group">
-                    <span class="text-center search-icon">
+                  <div class="flex items-center transition-all duration-200 input-group md:py-1">
+                    <span class="p-1 text-center rounded-md sm:mr-2 search-icon hover:bg-gray-100">
                       <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M13.7606 7.50537C13.7606 10.9601 10.96 13.7607 7.50529 13.7607C4.0506 13.7607 1.25 10.9601 1.25 7.50537C1.25 4.05061 4.0506 1.25 7.50529 1.25C10.96 1.25 13.7606 4.05061 13.7606 7.50537Z"
@@ -69,7 +71,7 @@
       
                     </span>
                     <input
-                      class="w-0 text-sm font-medium text-gray-800 placeholder-gray-600 transition-all duration-200 outline-none"
+                      class="w-0 text-sm font-medium text-gray-800 placeholder-gray-600 transition-all duration-200 outline-none "
                       type="text" placeholder="Search" value="">
                   </div>
                 </form>
@@ -77,12 +79,12 @@
               </div>
               <a href="#"
                 class="inline-block px-3 py-2 text-sm font-semibold leading-none text-white transition duration-700 ease-in bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 md:hidden">Subscribe</a>
-              <button class="hidden ml-3 focus:outline-none navbar-toggler collapsed lg:block md:ml-0 md:mr-2 " type="button"
+              <button href='#' class="hidden ml-3 focus:outline-none navbar-toggler collapsed lg:block md:ml-0 md:mr-2 " type="button"
                 data-toggle="collgse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="block mb-1 transition-all rotate-0 bg-orange-500 icon-bar top-bar "></span>
-                <span class="block mb-1 transition-all bg-orange-500 opacity-100 icon-bar middle-bar"></span>
-                <span class="block mb-1 transition-all rotate-0 bg-orange-500 icon-bar bottom-bar "></span>
+                <span class="block mb-1 transition-all rotate-0 bg-gray-900 icon-bar top-bar "></span>
+                <span class="block mb-1 transition-all bg-gray-900 opacity-100 icon-bar middle-bar"></span>
+                <span class="block mb-1 transition-all rotate-0 bg-gray-900 icon-bar bottom-bar "></span>
               </button>
       
             </div>
@@ -90,15 +92,29 @@
           </nav>
         </div>
       </header>
-  <section class="pt-20 pb-24 mt-12 bg-blue-100 hero-section md:pb-16 sm:pt-8 sm:pb-20 ">
+  <section class="pt-20 pb-24 bg-blue-100 margin-top hero-section md:pb-16 sm:pt-8 sm:pb-20 ">
     <div class="container px-4 mx-auto">
       <div class="flex lg:flex-wrap ">
       <div class="w-3/4 pr-4 hero-info lg:w-full lg:pr-0">  
         <div class="flex items-center">
               <a href="#" class="hover:opacity-75">
-                <figure>
-                  <img src="images/svg/icon-home.svg" alt="Home Icon">
-                </figure>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <g clip-path="url(#clip1)">
+                      <path
+                        d="M8.70809 0.29279C8.52027 0.105317 8.26557 0 8 0C7.73443 0 7.47973 0.105317 7.29191 0.29279L0.281144 7.29288C0.0987053 7.48149 -0.00224406 7.73409 3.78608e-05 7.99629C0.00231978 8.25849 0.107651 8.50931 0.293344 8.69472C0.479037 8.88013 0.730235 8.9853 0.992835 8.98758C1.25544 8.98986 1.50843 8.88906 1.69732 8.7069L1.99077 8.4139V15C1.99077 15.2652 2.09629 15.5196 2.28411 15.7071C2.47194 15.8946 2.72668 16 2.99231 16H4.99538C5.26101 16 5.51575 15.8946 5.70358 15.7071C5.8914 15.5196 5.99692 15.2652 5.99692 15V13C5.99692 12.7347 6.10244 12.4804 6.29027 12.2928C6.47809 12.1053 6.73284 11.9999 6.99846 11.9999H9.00154C9.26716 11.9999 9.52191 12.1053 9.70973 12.2928C9.89756 12.4804 10.0031 12.7347 10.0031 13V15C10.0031 15.2652 10.1086 15.5196 10.2964 15.7071C10.4842 15.8946 10.739 16 11.0046 16H13.0077C13.2733 16 13.5281 15.8946 13.7159 15.7071C13.9037 15.5196 14.0092 15.2652 14.0092 15V8.4139L14.3027 8.7069C14.4916 8.88906 14.7446 8.98986 15.0072 8.98758C15.2698 8.9853 15.521 8.88013 15.7067 8.69472C15.8923 8.50931 15.9977 8.25849 16 7.99629C16.0022 7.73409 15.9013 7.48149 15.7189 7.29288L8.70809 0.29279Z"
+                        fill="#343434" />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                    <clipPath id="clip1">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
               </a>
               <span class="px-2">
                 <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,105 +146,99 @@
   </section>
   <section class="pb-40 md:pb-32 sm:pb-24">
     <div class="container mx-auto -mt-10 sm:px-4">
-      <div class="flex flex-wrap justify-between lg:justify-center">
-          <div
-            class="w-full mx-3 mb-16 overflow-hidden xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post xl:max-w-xm54 md:max-w-xm53 sm:max-w-full sm:mx-0 lg:max-w-xs">
-            <a href="#"  class="overflow-hidden rounded-md max-h-lg sm:max-h-xl"><figure>
+      <div class="flex flex-wrap xl:justify-center">
+          <a href="#"
+            class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none">
+            <figure  class="overflow-hidden rounded-md max-h-lg sm:max-h-xl">
               <img src="images/post-feature-img.png" alt="Post Feature Image" class="w-full">
             </figure>
-            </a>
             <div class="p-4">
-              
-                <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600"><a href="#">Floater Funds- Meaning, Tyes,
-                  Features, Limitation, etc</a></h4>
+                <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">Floater Funds- Meaning, Tyes,
+                  Features, Limitation, etc</h4>
               <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
                 total profit earned is called a capital gain. Capital is nothing but the
                 principal investment that was made to purchase your mutual fund units. Let’s look at an example to
                 understand what
                 mutual funds capital gains mean.</p>
-                <a href="#" class="hidden w-full p-3 mt-5 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white "> Read more</a>
             </div>
-          </div>
-          <div
-            class="w-full mx-3 mb-16 overflow-hidden xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post xl:max-w-xm54 md:max-w-xm53 sm:max-w-full sm:mx-0 sm:mb-8 lg:max-w-xs">
-            <a href="#"  class="overflow-hidden rounded-md max-h-lg sm:max-h-xl"><figure >
+            <button href='#'
+              class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
+              Read more</button>
+          </a>
+          <a href="#"
+            class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none">
+            <figure class="overflow-hidden rounded-md max-h-lg sm:max-h-xl">
               <img src="images/post-feature-img2.png" alt="Post Feature Image" class="w-full">
-            </figure></a>
+            </figure>
             <div class="p-4">
-                <h4 class="text-xl font-bold leading-tight text-gray-900 hover:text-blue-600 font-ballinger "><a href="#">What is Long Term Capital Gain
-                  Tax?</a>
-                </h4>
+              <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">A Complete Guide to Mid Cap Mutual Funds</h4>
               <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
                 total profit earned is called a capital gain. Capital is nothing but the
                 principal investment that was made to purchase your mutual fund units. Let’s look at an example to
                 understand what
                 mutual funds capital gains mean.</p>
-                <a href="#"
-                  class="hidden w-full p-3 mt-5 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
-                  Read more</a>
             </div>
-          </div>
-          <div class="w-full mx-3 mb-16 overflow-hidden xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post xl:max-w-xm54 md:max-w-xm53 sm:max-w-full sm:mx-0 sm:mb-8 lg:max-w-xs">
-            <a href="#"  class="overflow-hidden rounded-md max-h-lg sm:max-h-xl"><figure>
+            <button href='#'
+              class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
+              Read more</button>
+          </a>
+          <a href="#"
+            class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none">
+            <figure class="overflow-hidden rounded-md max-h-lg sm:max-h-xl">
               <img src="images/post-feature-img3.png" alt="Post Feature Image" class="w-full">
-            </figure></a>
+            </figure>
             <div class="p-4">
-                <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600"><a href="#">A Complete Guide to Mid Cap Mutual
-                  Funds</a>
-                </h4>
+              <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">What is Long Term Capital Gain Tax?</h4>
               <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
-                total
-                profit earned is called a capital gain. Capital is nothing but the
+                total profit earned is called a capital gain. Capital is nothing but the
                 principal investment that was made to purchase your mutual fund units. Let’s look at an example to
                 understand what
                 mutual funds capital gains mean.</p>
-                <a href="#"
-                  class="hidden w-full p-3 mt-5 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
-                  Read more</a>
             </div>
+            <button href='#'
+              class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
+              Read more</button>
+          </a>
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-h-xl">
+            <img src="images/post-feature-img4.png" alt="Post Feature Image" class="w-full">
+          </figure>
+          <div class="p-4">
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">What is Long Term Capital Gain Tax?</h4>
+            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+              total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+              understand what
+              mutual funds capital gains mean.</p>
           </div>
-        <div class="w-full mx-3 mb-16 overflow-hidden xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post xl:max-w-xm54 md:max-w-xm53 sm:max-w-full sm:mx-0 sm:mb-8 lg:max-w-xs">
-          <a href="#" class="overflow-hidden rounded-md max-h-lg sm:max-h-xl"><figure >
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-h-xl">
             <img src="images/post-feature-img5.png" alt="Post Feature Image" class="w-full">
           </figure>
-          </a>
           <div class="p-4">
-              <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600"><a href="#">How to Create an Inspiring Customer Service Philosophy</a></h4>
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">A Complete Guide to Mid Cap Mutual Funds</h4>
             <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
               total profit earned is called a capital gain. Capital is nothing but the
               principal investment that was made to purchase your mutual fund units. Let’s look at an example to
               understand what
               mutual funds capital gains mean.</p>
-              <a href="#"
-                class="hidden w-full p-3 mt-5 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
-                Read more</a>
           </div>
-        </div>
-        <div class="w-full mx-3 mb-16 overflow-hidden xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post xl:max-w-xm54 md:max-w-xm53 sm:max-w-full sm:mx-0 sm:mb-8 lg:max-w-xs">
-          <a href="#" class="overflow-hidden rounded-md max-h-lg sm:max-h-xl"><figure >
-            <img src="images/post-feature-img6.png" alt="Post Feature Image" class="w-full">
-          </figure>
-          </a>
-          <div class="p-4">
-            
-              <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600"><a href="#">6 Essential Tips for Successful Social Media Customer Service</a>
-              </h4>
-            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
-              total profit earned is called a capital gain. Capital is nothing but the
-              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
-              understand what
-              mutual funds capital gains mean.</p>
-              <a href="#"
-                class="hidden w-full p-3 mt-5 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
-                Read more</a>
-          </div>
-        </div>
-        <div class="w-full p-6 mx-3 mb-16 overflow-hidden bg-blue-200 rounded-md xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post xl:max-w-xm54 md:max-w-xm53 sm:max-w-full sm:mx-0 sm:mb-8 lg:max-w-xs">
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
+        <div class="w-full p-6 mx-3 mb-16 overflow-hidden bg-blue-200 rounded-md xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 sm:mb-8 lg:max-w-md1">
             <div class="w-full h-full mx-auto max-w-mdd">
               <a href="#"
                 class="table px-3 py-2 text-xs font-semibold leading-tight tracking-wide text-white uppercase transition-all duration-700 ease-in bg-gray-900 rounded-md shadow-lg btn-invesment hover:bg-gray-800">Investment
                 Insights</a>
-              <h3 class="pt-4 pb-6 font-serif text-2xl font-extrabold leading-tight text-gray-900 sm:text-2xl sm:p-0">Personal Finance &
+              <h3 class="pt-4 pb-6 font-serif text-2xl font-extrabold leading-tight text-gray-900 sm:text-2xl sm:p-0 sm:my-4">Personal Finance &
                 Investment Insights</h3>
               <div class="">
                 <input type="email" id="email" name="email"
@@ -243,77 +253,188 @@
                 important to us</p>
             </div>
         </div>
-        <div
-          class="w-full mx-3 mb-16 overflow-hidden xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post xl:max-w-xm54 md:max-w-xm53 sm:max-w-full sm:mx-0 sm:mb-8 lg:max-w-xs sm:flex sm:items-center sm:hover:shadow-none">
-          <a href="#" class="overflow-hidden rounded-md max-h-lg sm:max-h-xl sm:max-w-xm4 sm:w-full">
-            <figure>
-              <img src="images/post-feature-img7.png" alt="Post Feature Image" class="w-full">
-            </figure>
-          </a>
-          <div class="p-4 sm:pl-4 sm:p-0">
-            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600 sm:text-base"><a
-                href="#">Floater Funds- Meaning, Tyes, Features, Limitation, etc</a>
-            </h4>
-            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600 sm:hidden">When you sell your assets at a profit,
-              the
-              total
-              profit earned is called a capital gain. Capital is nothing but the
-              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
-              understand what
-              mutual funds capital gains mean.</p>
-          </div>
-        </div>
-        <div
-          class="w-full mx-3 mb-16 overflow-hidden xl:max-w-xsm4 sm:hover:shadow-none lg:mb-10 max-w-mdd hover:shadow-lg blog-post xl:max-w-xm54 md:max-w-xm53 sm:max-w-full sm:mx-0 sm:mb-8 lg:max-w-xs sm:flex sm:items-center">
-          <a href="#" class="overflow-hidden rounded-md max-h-lg sm:max-h-xl sm:max-w-xm4 sm:w-full">
-            <figure>
-              <img src="images/post-feature-img8.png" alt="Post Feature Image" class="w-full">
-            </figure>
-          </a>
-          <div class="p-4 sm:pl-4 sm:p-0">
-            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600 sm:text-base"><a
-                href="#">What is Long Term Capital Gain Tax?</a>
-            </h4>
-            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600 sm:hidden">When you sell your assets at a profit,
-              the
-              total
-              profit earned is called a capital gain. Capital is nothing but the
-              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
-              understand what
-              mutual funds capital gains mean.</p>
-          </div>
-        </div>
-        <div class="w-full mx-3 mb-16 overflow-hidden xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post xl:max-w-xm54 md:max-w-xm53 sm:max-w-full sm:mx-0 sm:mb-8 lg:max-w-xs sm:flex sm:items-center sm:hover:shadow-none">
-          <a href="#" class="overflow-hidden rounded-md max-h-lg sm:max-h-xl sm:max-w-xm4 sm:w-full"><figure >
-            <img src="images/post-feature-img9.png" alt="Post Feature Image" class="w-full">
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-h-xl">
+            <img src="images/post-feature-img6.png" alt="Post Feature Image" class="w-full">
           </figure>
-          </a>
-          <div class="p-4 sm:pl-4 sm:p-0">
-              <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600 sm:text-base"><a href="#">A Complete Guide to Mid Cap Mutual Funds</a>
-              </h4>
-            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600 sm:hidden">When you sell your assets at a profit, the
-              total
-              profit earned is called a capital gain. Capital is nothing but the
+          <div class="p-4">
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">Floater Funds- Meaning,
+              Tyes,
+              Features, Limitation, etc</h4>
+            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+              total profit earned is called a capital gain. Capital is nothing but the
               principal investment that was made to purchase your mutual fund units. Let’s look at an example to
               understand what
               mutual funds capital gains mean.</p>
           </div>
-        </div>
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-h-xl">
+            <img src="images/post-feature-img7.png" alt="Post Feature Image" class="w-full">
+          </figure>
+          <div class="p-4">
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">What is Long Term Capital Gain Tax?</h4>
+            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+              total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+              understand what
+              mutual funds capital gains mean.</p>
+          </div>
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-h-xl">
+            <img src="images/post-feature-img8.png" alt="Post Feature Image" class="w-full">
+          </figure>
+          <div class="p-4">
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">A Complete Guide to Mid Cap Mutual Funds</h4>
+            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+              total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+              understand what
+              mutual funds capital gains mean.</p>
+          </div>
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-h-xl">
+            <img src="images/post-feature-img6.png" alt="Post Feature Image" class="w-full">
+          </figure>
+          <div class="p-4">
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">Floater Funds- Meaning,
+              Tyes,
+              Features, Limitation, etc</h4>
+            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+              total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+              understand what
+              mutual funds capital gains mean.</p>
+          </div>
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer sm:flex xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none sm:items-center">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-w-xm4 sm:w-full">
+            <img src="images/post-feature-img7.png" alt="Post Feature Image" class="w-full sm:h-full sm:object-cover">
+          </figure>
+          <div class="p-4 sm:p-0">
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600 sm:text-base sm:pl-4">
+              Floater Funds- Meaning, Tyes, Features, Limitation, etc</h4>
+            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600 sm:hidden">When you sell your assets at a profit,
+              the
+              total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+              understand what
+              mutual funds capital gains mean.</p>
+          </div>
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:hidden sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer sm:flex xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none sm:items-center">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-w-xm4 sm:w-full">
+            <img src="images/post-feature-img8.png" alt="Post Feature Image" class="w-full sm:h-full sm:object-cover">
+          </figure>
+          <div class="p-4 sm:p-0">
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600 sm:text-base sm:pl-4">
+              What is Long Term
+              Capital Gain Tax?</h4>
+            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600 sm:hidden">When you sell your assets at a profit,
+              the
+              total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+              understand what
+              mutual funds capital gains mean.</p>
+          </div>
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:hidden sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer sm:flex xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none sm:items-center">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-w-xm4 sm:w-full">
+            <img src="images/post-feature-img7.png" alt="Post Feature Image" class="w-full sm:h-full sm:object-cover">
+          </figure>
+          <div class="p-4 sm:p-0">
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600 sm:text-base sm:pl-4">
+              Floater Funds- Meaning, Tyes, Features, Limitation, etc</h4>
+            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600 sm:hidden">When you sell your assets at a profit,
+              the
+              total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+              understand what
+              mutual funds capital gains mean.</p>
+          </div>
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:hidden sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer sm:flex xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none sm:items-center">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-w-xm4 sm:w-full">
+            <img src="images/post-feature-img8.png" alt="Post Feature Image" class="w-full sm:h-full sm:object-cover">
+          </figure>
+          <div class="p-4 sm:p-0">
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600 sm:text-base sm:pl-4">
+              What is Long Term
+              Capital Gain Tax?</h4>
+            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600 sm:hidden">When you sell your assets at a profit,
+              the
+              total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+              understand what
+              mutual funds capital gains mean.</p>
+          </div>
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:hidden sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
+        <a href="#"
+          class="w-full mx-3 mb-16 overflow-hidden transition-all ease-in delay-200 cursor-pointer sm:flex xl:max-w-xsm4 lg:mb-10 max-w-mdd hover:shadow-lg blog-post sm:max-w-full sm:mx-0 lg:max-w-md1 sm:hover:shadow-none sm:items-center">
+          <figure class="overflow-hidden rounded-md max-h-lg sm:max-w-xm4 sm:w-full">
+            <img src="images/post-feature-img9.png" alt="Post Feature Image" class="w-full sm:h-full sm:object-cover">
+          </figure>
+          <div class="p-4 sm:p-0">
+            <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600 sm:text-base sm:pl-4">A Complete Guide to Mid Cap Mutual Funds</h4>
+            <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600 sm:hidden">When you sell your assets at a profit, the
+              total profit earned is called a capital gain. Capital is nothing but the
+              principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+              understand what
+              mutual funds capital gains mean.</p>
+          </div>
+          <button href='#'
+            class="hidden w-full p-3 mt-2 text-sm font-medium leading-none text-center text-gray-700 transition-all duration-200 ease-in bg-gray-100 rounded-md sm:hidden sm:block hover:bg-black hover:text-white ">
+            Read more</button>
+        </a>
       </div>
       <div class="flex items-center justify-between px-4 pagination md:px-0">
-        <a href="#" class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border border-gray-200 rounded-md hover:bg-blue-600 hover:text-white" >Previous</a>
-        <div class="flex overflow-hidden border border-gray-200 rounded-md md:hidden">
-        <a href="#" class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border border-gray-200 hover:bg-blue-600 hover:text-white" >1</a>
-        <a href="#" class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border border-gray-200 hover:bg-blue-600 hover:text-white" >2</a>
+        <a href="#" class="w-full px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border border-gray-200 rounded-md max-w-xm6 hover:bg-blue-600 hover:text-white" >Previous</a>
+        <div class="flex overflow-hidden border-t border-b border-gray-200 rounded-md md:hidden">
+        <a href="#" class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border-l border-gray-200 active hover:bg-blue-600 hover:text-white" >1</a>
+        <a href="#" class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border-l border-gray-200 hover:bg-blue-600 hover:text-white" >2</a>
         <a href="#"
-          class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border border-gray-200 hover:bg-blue-600 hover:text-white">3</a>
+          class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border-l border-gray-200 hover:bg-blue-600 hover:text-white">3</a>
           <a href="#"
-            class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border border-gray-200 hover:bg-blue-600 hover:text-white">4</a>
+            class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border-l border-gray-200 hover:bg-blue-600 hover:text-white">4</a>
             <a href="#"
-              class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border border-gray-200 hover:bg-blue-600 hover:text-white">5</a>
+              class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border-l border-r border-gray-200 hover:bg-blue-600 hover:text-white">5</a>
 
         </div>
-        <a href="#" class="px-4 py-3 text-sm font-medium leading-none text-gray-600 transition duration-200 ease-in border border-gray-200 rounded-md hover:bg-blue-600 hover:text-white" >Next</a>
+        <a href="#" class="w-full px-6 py-3 text-sm font-medium leading-none text-center text-gray-600 transition duration-200 ease-in border border-gray-200 rounded-md max-w-xm6 hover:bg-blue-600 hover:text-white" >Next</a>
       </div>
     </div>
   </section>

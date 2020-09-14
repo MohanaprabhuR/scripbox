@@ -9,101 +9,118 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </head>
-<body>
-      <header id="header" class="fixed top-0 z-50 w-full py-2 bg-white shadow-sm site-header header-fixed single-page-header">
-        <div class="container px-4">
-          <nav class="flex items-center justify-between navbar lg:flex-wrap md:flex-row-reverse">
-      
+<body class="antialiased">
+    <header id="header" class="fixed top-0 z-50 w-full py-2 bg-white shadow-sm site-header header-fixed single-page-header">
+      <div class="container px-4">
+        <nav class="flex items-center justify-between navbar lg:flex-wrap md:flex-row-reverse">
+    
+          <a href="#"
+            class="items-center hidden font-semibold leading-none text-gray-800 transition-all duration-200 rounded-md search-mobile sm:flex md:flex">
+            Subscribe
+            <figure class="pl-1"><svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.834449 7.7656C0.684472 7.61557 0.60022 7.41213 0.60022 7.2C0.60022 6.98786 0.684472 6.78442 0.834449 6.6344L3.46885 4L0.834449 1.3656C0.688723 1.21471 0.608087 1.01263 0.609909 0.802875C0.611732 0.593118 0.695868 0.392468 0.844194 0.244141C0.992521 0.095815 1.19317 0.0116796 1.40293 0.0098569C1.61269 0.00803417 1.81477 0.08867 1.96565 0.234396L5.16565 3.4344C5.31563 3.58442 5.39988 3.78786 5.39988 4C5.39988 4.21213 5.31563 4.41557 5.16565 4.5656L1.96565 7.7656C1.81563 7.91557 1.61218 7.99983 1.40005 7.99983C1.18792 7.99983 0.984471 7.91557 0.834449 7.7656Z"
+                  fill="#343434" />
+              </svg>
+            </figure>
+          </a>
+          <div class="flex items-center nav-brand lg:order-none">
+            <h1 class="z-20 bg-white"><a href="#">
+                <figure>
+                  <img src="images/svg/logo.svg" alt="Scripbox">
+                </figure>
+              </a></h1>
+            <p
+              class="absolute z-10 pl-3 text-base font-medium text-gray-800 transition-all ease-in translate-y-4 opacity-0 lg:hidden xl:text-sm">
+              Taxation of Mutual Funds:
+              How mutual funds are taxed in India
+            </p>
+    
+          </div>
+          <div class="z-10 nav-items lg:hidden lg:order-2 lg:w-full">
+            <div class="flex enroll-toggle align-items-center w-100">
+              <ul class="flex navbar-collapse lg:w-full lg:flex-col">
+                <li class="lg:text-center lg:py-3">
+                  <a href="#" class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-3 hover:text-black">Personal
+                    Finance</a>
+                </li>
+                <li class="lg:text-center lg:py-3"><a href="#"
+                    class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-3 lg:text-center hover:text-black">Investment
+                    Planning</a></li>
+                <li class="lg:text-center lg:py-3"><a href="#"
+                    class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-3 lg:text-center hover:text-black">Tax</a>
+                </li>
+                <li class="lg:text-center lg:py-3"><a href="#"
+                    class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-3 lg:text-center hover:text-black">Retirement</a>
+                </li>
+                <li class="lg:text-center lg:py-3"><a href="#"
+                    class="text-sm font-medium text-gray-600 hover:text-black">Loans & EMI</a>
+                </li>
+              </ul>
+            </div>
+    
+          </div>
+          <div class="relative flex items-center lg:order-1 md:flex-row-reverse search-control">
+            <div class="pr-4 transition-all duration-200 search-body xl:pr-2">
+              <form method="get" id="searchform" action="" role="search">
+                <div class="flex items-center transition-all duration-200 input-group md:py-1">
+                  <span class="p-1 text-center rounded-md sm:mr-2 search-icon hover:bg-gray-100">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.7606 7.50537C13.7606 10.9601 10.96 13.7607 7.50529 13.7607C4.0506 13.7607 1.25 10.9601 1.25 7.50537C1.25 4.05061 4.0506 1.25 7.50529 1.25C10.96 1.25 13.7606 4.05061 13.7606 7.50537Z"
+                        stroke="#343434" stroke-width="2" />
+                      <rect width="2.41844" height="7.84274" rx="1.20922"
+                        transform="matrix(0.707103 -0.707111 0.707103 0.707111 10.4943 12.2042)" fill="#343434" />
+                    </svg>
+    
+                  </span>
+                  <input
+                    class="w-0 text-sm font-medium text-gray-800 placeholder-gray-600 transition-all duration-200 outline-none "
+                    type="text" placeholder="Search" value="">
+                </div>
+              </form>
+    
+            </div>
             <a href="#"
-              class="items-center hidden font-semibold leading-none text-gray-800 transition-all duration-200 rounded-md sm:flex md:flex">
-              Subscribe
-              <figure class="pl-1"><svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.834449 7.7656C0.684472 7.61557 0.60022 7.41213 0.60022 7.2C0.60022 6.98786 0.684472 6.78442 0.834449 6.6344L3.46885 4L0.834449 1.3656C0.688723 1.21471 0.608087 1.01263 0.609909 0.802875C0.611732 0.593118 0.695868 0.392468 0.844194 0.244141C0.992521 0.095815 1.19317 0.0116796 1.40293 0.0098569C1.61269 0.00803417 1.81477 0.08867 1.96565 0.234396L5.16565 3.4344C5.31563 3.58442 5.39988 3.78786 5.39988 4C5.39988 4.21213 5.31563 4.41557 5.16565 4.5656L1.96565 7.7656C1.81563 7.91557 1.61218 7.99983 1.40005 7.99983C1.18792 7.99983 0.984471 7.91557 0.834449 7.7656Z"
-                    fill="#343434" />
-                </svg>
-              </figure>
-            </a>
-            <div class="flex items-center nav-barand lg:order-none">
-              <h1 class="z-20 bg-white"><a href="#">
-                  <figure>
-                    <img src="images/svg/logo.svg" alt="Scripbox">
-                  </figure>
-                </a></h1>
-              <p
-                class="absolute z-10 pl-3 text-base font-medium text-gray-800 transition ease-in-out translate-y-4 opacity-0 lg:hidden xl:text-sm">
-                Taxation of Mutual Funds:
-                How mutual funds are taxed in India
-              </p>
-      
-            </div>
-            <div class="z-10 nav-items lg:hidden lg:order-2 lg:w-full">
-              <div class="flex enroll-toggle align-items-center w-100">
-                <ul class="flex navbar-collapse lg:w-full lg:flex-col">
-                  <li class="lg:text-center lg:py-3">
-                    <a href="#" class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-3 hover:text-black">Personal
-                      Finance</a>
-                  </li>
-                  <li class="lg:text-center lg:py-3"><a href="#"
-                      class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-3 lg:text-center hover:text-black">Investment
-                      Planning</a></li>
-                  <li class="lg:text-center lg:py-3"><a href="#"
-                      class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-3 lg:text-center hover:text-black">Tax</a>
-                  </li>
-                  <li class="lg:text-center lg:py-3"><a href="#"
-                      class="mr-8 text-sm font-medium text-gray-600 lg:mr-4 xl:mr-3 lg:text-center hover:text-black">Retirement</a>
-                  </li>
-                  <li class="lg:text-center lg:py-3"><a href="#"
-                      class="text-sm font-medium text-gray-600 hover:text-black">Loans & EMI</a>
-                  </li>
-                </ul>
-              </div>
-      
-            </div>
-            <div class="relative flex items-center lg:order-1 md:flex-row-reverse">
-              <div class="pr-5 search-body xl:pr-2 md:absolute md:left-0 md:ml-8">
-                <form method="get" id="searchform" action="" role="search">
-                  <div class="flex items-center input-group">
-                    <span class="text-center search-icon">
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M13.7606 7.50537C13.7606 10.9601 10.96 13.7607 7.50529 13.7607C4.0506 13.7607 1.25 10.9601 1.25 7.50537C1.25 4.05061 4.0506 1.25 7.50529 1.25C10.96 1.25 13.7606 4.05061 13.7606 7.50537Z"
-                          stroke="#343434" stroke-width="2" />
-                        <rect width="2.41844" height="7.84274" rx="1.20922"
-                          transform="matrix(0.707103 -0.707111 0.707103 0.707111 10.4943 12.2042)" fill="#343434" />
-                      </svg>
-      
-                    </span>
-                    <input
-                      class="w-0 text-sm font-medium text-gray-800 placeholder-gray-600 transition-all duration-200 outline-none"
-                      type="text" placeholder="Search" value="">
-                  </div>
-                </form>
-      
-              </div>
-              <a href="#"
-                class="inline-block px-3 py-2 text-sm font-semibold leading-none text-white transition duration-700 ease-in bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 md:hidden">Subscribe</a>
-              <button class="hidden ml-3 focus:outline-none navbar-toggler collapsed lg:block md:ml-0 md:mr-2 " type="button"
-                data-toggle="collgse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="block mb-1 transition-all rotate-0 bg-orange-500 icon-bar top-bar "></span>
-                <span class="block mb-1 transition-all bg-orange-500 opacity-100 icon-bar middle-bar"></span>
-                <span class="block mb-1 transition-all rotate-0 bg-orange-500 icon-bar bottom-bar "></span>
-              </button>
-      
-            </div>
-      
-          </nav>
-        </div>
-      </header>
-  <section class="pt-8 pb-24 mt-12 bg-orange-100 hero-section md:pb-16 sm:py-12">
+              class="inline-block px-3 py-2 text-sm font-semibold leading-none text-white transition duration-700 ease-in bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 md:hidden">Subscribe</a>
+            <button class="hidden ml-3 focus:outline-none navbar-toggler collapsed lg:block md:ml-0 md:mr-2 " type="button"
+              data-toggle="collgse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="block mb-1 transition-all rotate-0 bg-gray-900 icon-bar top-bar "></span>
+              <span class="block mb-1 transition-all bg-gray-900 opacity-100 icon-bar middle-bar"></span>
+              <span class="block mb-1 transition-all rotate-0 bg-gray-900 icon-bar bottom-bar "></span>
+            </button>
+    
+          </div>
+    
+        </nav>
+      </div>
+    </header>
+  <section class="pt-8 pb-24 bg-orange-100 margin-top hero-section md:pb-16 sm:py-12">
     <div class="container px-4 ">
       <div class="flex items-center lg:flex-wrap lg:justify-center">
-      <div class="w-3/4 pr-4 hero-info lg:w-full lg:pr-0 sm:text-center">  
+        <div class="w-3/4 pr-4 hero-info lg:w-full lg:pr-0 sm:text-center">  
         <div class="flex items-center sm:pb-3 sm:justify-center">
               <a href="#" class="hover:opacity-75">
                 <figure>
-                  <img src="images/svg/icon-home.svg" alt="Home Icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <g clip-path="url(#clip1)">
+                        <path
+                          d="M8.70809 0.29279C8.52027 0.105317 8.26557 0 8 0C7.73443 0 7.47973 0.105317 7.29191 0.29279L0.281144 7.29288C0.0987053 7.48149 -0.00224406 7.73409 3.78608e-05 7.99629C0.00231978 8.25849 0.107651 8.50931 0.293344 8.69472C0.479037 8.88013 0.730235 8.9853 0.992835 8.98758C1.25544 8.98986 1.50843 8.88906 1.69732 8.7069L1.99077 8.4139V15C1.99077 15.2652 2.09629 15.5196 2.28411 15.7071C2.47194 15.8946 2.72668 16 2.99231 16H4.99538C5.26101 16 5.51575 15.8946 5.70358 15.7071C5.8914 15.5196 5.99692 15.2652 5.99692 15V13C5.99692 12.7347 6.10244 12.4804 6.29027 12.2928C6.47809 12.1053 6.73284 11.9999 6.99846 11.9999H9.00154C9.26716 11.9999 9.52191 12.1053 9.70973 12.2928C9.89756 12.4804 10.0031 12.7347 10.0031 13V15C10.0031 15.2652 10.1086 15.5196 10.2964 15.7071C10.4842 15.8946 10.739 16 11.0046 16H13.0077C13.2733 16 13.5281 15.8946 13.7159 15.7071C13.9037 15.5196 14.0092 15.2652 14.0092 15V8.4139L14.3027 8.7069C14.4916 8.88906 14.7446 8.98986 15.0072 8.98758C15.2698 8.9853 15.521 8.88013 15.7067 8.69472C15.8923 8.50931 15.9977 8.25849 16 7.99629C16.0022 7.73409 15.9013 7.48149 15.7189 7.29288L8.70809 0.29279Z"
+                          fill="#343434" />
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                      <clipPath id="clip1">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
                 </figure>
               </a>
               <span class="px-2">
@@ -135,7 +152,7 @@
             Updated on Aug 20, 2020
           </div>
         </div>
-        <div class="w-3/12 lg:w-full sm:pt-8">
+        <div class="w-3/12 lg:w-full lg:pt-8">
           <figure class="max-w-xs ml-auto lg:mx-auto">
               <img src="images/post-feature-img4.png" alt="Post Feature Image" class="w-full">
           </figure>
@@ -146,7 +163,8 @@
   <section class="py-16 lg:py-10">
       
         <div class="container px-4 container-wrapper">
-          <div class="w-10/12 lg:w-full">
+          <div class="w-3/4 lg:w-full">
+            <div class="sm:-ml-4 width-xll">
             <div class="overflow-x-auto">
               <div class="inline-block min-w-full py-2 align-middle">
                 <div class="flex items-center pb-6 entity md:pb-4">
@@ -169,6 +187,7 @@
               </div>
             
             </div>
+            </div>
           <p class="max-w-2xl text-base font-normal leading-relaxed text-gray-800 md:max-w-full"><span
               class="float-left pr-3 font-serif text-5xl font-extrabold leading-none">T</span>axation on mutual funds is
             a complex topic. Taxes paid on your mutual fund investments vastly depend on
@@ -176,7 +195,7 @@
             slab you
             belong to.</p>
           <blockquote
-            class="relative float-right pt-3 my-8 ml-16 text-xl font-normal text-gray-900 md:float-none max-w-xs1 blockquote-orange font-regularitalic md:max-w-full md:mx-0 md:mb-0">
+            class="relative float-right pt-3 my-8 ml-16 text-xl italic font-normal text-gray-900 md:float-none max-w-xs1 blockquote-orange font-ballinger md:max-w-full md:mx-0 md:mb-0">
             While you carefully plan your mutual fund investments, the one variable that tends to get overlooked is mutual
             fund
             taxation.</blockquote>
@@ -281,9 +300,7 @@
             will delve into both of these momentarily. In the meantime, let’s look at how a mutual fund dividend payout
             impacts
             your taxes.</p>
-            </div>
-        </div>
-        <div class="container">
+            <div class="sm:-ml-4 width-xll">
           <div
             class="max-w-2xl px-8 pt-6 pb-12 mt-12 rounded-md shadow-lg sm:max-w-full bg-gradient-to-tr from-green-100 via-green-100 to-green-100 sm:py-8 sm:px-6 md:rounded-none md:max-w-full">
             <div class="flex items-center md:flex-wrap">
@@ -298,7 +315,7 @@
                 </div>
               </div>
               <a href="#"
-                class="px-8 py-3 text-sm font-medium leading-none text-white transition duration-200 ease-in bg-green-500 rounded-md mdle md:hidden hover:bg-green-600">Invest
+                class="px-6 py-3 text-sm font-medium leading-none text-white transition duration-200 ease-in bg-green-500 rounded-md mdle md:hidden hover:bg-green-600">Invest
                 Now</a>
             </div>
             <div class="flex justify-between pt-10 md:flex-wrap md:pt-0">
@@ -341,9 +358,8 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="container px-4 container-wrapper">
-          <div class="w-10/12 lg:w-full">
+          </div>
+         
           <h3
             class="max-w-2xl pt-16 text-2xl font-bold leading-none text-gray-900 md:max-w-full font-ballinger md:text-xl md:pt-10">
             Dividend Income</h3>
@@ -875,11 +891,7 @@
             will delve into both of these momentarily. In the meantime, let’s look at how a mutual fund dividend payout
             impacts
             your taxes.</p>
-          <div class="flex justify-center max-w-2xl pt-16 md:max-w-full md:pt-10">
-            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
-            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
-          </div>
+          <hr class="relative pt-16 mx-auto border-0 md:max-w-full md:pt-10">
           <h2
             class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 md:max-w-full font-ballinger md:pt-10 sm:text-2xl">
             Features of Floater Funds</h2>
@@ -899,20 +911,21 @@
             Top Floater Funds</h6>
           <p class="max-w-2xl pt-2 text-base font-normal leading-relaxed text-gray-800 md:max-w-full">The top
             floater funds that Scripbox has chosen for 2020.</p>
-          <div class="max-w-2xl pt-6 md:max-w-full fund-card">
-            <a href="#" class="relative block py-4 pr-2 shadow-sm sm:px-4 fund-card-list">
+          <div class="sm:-ml-2 width-xll">
+          <div class="max-w-2xl pt-6 md:max-w-full ">
+            <a href="#" class="relative block py-4 pr-2 border-b border-gray-200 sm:px-4 fund-card-list">
               <div class="flex items-center justify-between sm:flex-wrap">
                 <div class="flex items-center flex-auto ">
                   <small class="w-1 h-12 mr-3 bg-orange-500 rounded-lg"></small>
-                  <figure class="w-full pr-4 max-w-xm1">
+                  <figure class="w-full pr-4 max-w-xm2">
                     <img src="images/svg/motilal-oswal.svg" alt="Motilal Oswal">
                   </figure>
-                  <div class="fund-description">
-                    <h6 class="font-semibold leading-none text-gray-900">Motilal Oswal Long Term Equity Fund</h6>
+                  <div class="flex-1 min-w-0 fund-description">
+                    <h6 class="font-semibold leading-none text-gray-900 truncate">Motilal Oswal Long Term Equity Fund</h6>
                     <p class="pt-2 text-xs font-normal text-gray-500">Diversified</p>
                   </div>
                 </div>
-                <div class="flex sm:w-full sm:justify-center sm:pt-4">
+                <div class="flex sm:w-full sm:hidden">
                   <div class="ml-6 sm:ml-2">
                     <p class="text-sm font-normal leading-none text-gray-900">₹ 1,000</p><small
                       class="pt-2 text-sm font-normal leading-none text-gray-400">Min. Amount</small>
@@ -924,18 +937,18 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="relative block py-4 pr-2 shadow-sm sm:px-4 fund-card-list">
+            <a href="#" class="relative block py-4 pr-2 border-b border-gray-200 sm:px-4 fund-card-list">
               <div class="flex items-center justify-between sm:flex-wrap">
                 <div class="flex items-center flex-auto">
-                  <figure class="w-full pr-4 max-w-xm1">
+                  <figure class="w-full pr-4 max-w-xm2">
                     <img src="images/svg/logo-mirae.svg" alt="Logo Mirae">
                   </figure>
-                  <div class="fund-description">
+                  <div class="flex-1 min-w-0 fund-description">
                     <h6 class="font-semibold leading-none text-gray-900">Mirae Asset Tax Saver Fund</h6>
                     <p class="pt-2 text-xs font-normal text-gray-500">Diversified</p>
                   </div>
                 </div>
-                <div class="flex sm:w-full sm:justify-center sm:pt-4">
+                <div class="flex sm:w-full sm:hidden">
                   <div class="ml-6 sm:ml-2">
                     <p class="text-sm font-normal leading-none text-gray-900">₹ 1,000</p><small
                       class="pt-2 text-sm font-normal leading-none text-gray-400">Min. Amount</small>
@@ -947,18 +960,18 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="relative block py-4 pr-2 shadow-sm sm:px-4 fund-card-list">
+            <a href="#" class="relative block py-4 pr-2 border-b border-gray-200 sm:px-4 fund-card-list">
               <div class="flex items-center justify-between sm:flex-wrap">
                 <div class="flex items-center flex-auto">
-                  <figure class="w-full pr-4 max-w-xm1">
+                  <figure class="w-full pr-4 max-w-xm2">
                     <img src="images/svg/logo-mirae.svg" alt="Logo Mirae">
                   </figure>
-                  <div class="fund-description">
+                  <div class="flex-1 min-w-0 fund-description">
                     <h6 class="font-semibold leading-none text-gray-900">Mirae Asset Tax Saver Fund</h6>
                     <p class="pt-2 text-xs font-normal text-gray-500">Diversified</p>
                   </div>
                 </div>
-                <div class="flex sm:w-full sm:justify-center sm:pt-4">
+                <div class="flex sm:w-full sm:hidden">
                   <div class="ml-6 sm:ml-2">
                     <p class="text-sm font-normal leading-none text-gray-900">₹ 1,000</p><small
                       class="pt-2 text-sm font-normal leading-none text-gray-400">Min. Amount</small>
@@ -971,14 +984,11 @@
               </div>
             </a>
             <a href="#"
-              class="block p-3 mt-6 text-sm font-semibold leading-5 text-center text-gray-800 transition duration-200 ease-in bg-gray-100 rounded-md hover:bg-black hover:text-white sm:bg-orange-500 sm:text-white sm:hover:bg-orange-60">See
+              class="block p-3 mt-6 text-sm font-semibold leading-5 text-center text-gray-800 transition duration-200 ease-in bg-gray-100 rounded-md sm:bg-orange-500 sm:text-white hover:bg-black hover:text-white sm:hover:bg-orange-60 sm:mx-4">See
               all Floater Funds</a>
           </div>
-          <div class="flex justify-center pt-16 md:pt-10 sm:pt-8">
-            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
-            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
           </div>
+          <hr class="relative pt-16 mx-auto border-0 md:max-w-full md:pt-10">
           <h2
             class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 md:max-w-full font-ballinger md:pt-10 md:text-2xl">
             Advantages of investing in midcap funds</h2>
@@ -998,11 +1008,7 @@
                 Management:</span>
               These are professionally managed by a qualified and experienced fund manager</li>
           </ul>
-          <div class="flex justify-center max-w-2xl pt-16 md:max-w-full md:pt-10">
-            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
-            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
-          </div>
+          <hr class="relative pt-16 mx-auto border-0 md:max-w-full md:pt-10">
           <h2
             class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 md:max-w-full font-ballinger md:pt-10 md:text-2xl">
             Benefits of investing in overnight funds</h2>
@@ -1021,11 +1027,7 @@
               investment portfolio. The investment is spread across various mid cap stocks
               and sectors.</li>
           </ol>
-          <div class="flex justify-center max-w-2xl pt-16 md:max-w-full md:pt-10">
-            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
-            <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
-          </div>
+          <hr class="relative pt-16 mx-auto border-0 md:max-w-full md:pt-10">
           <h2
             class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 md:max-w-full font-ballinger md:pt-10 md:text-2xl">
             How to invest in Mutual Funds</h2>
@@ -1034,32 +1036,32 @@
             their excess/idle money in them than a bank current account. Their benefits include high liquidity, low
             expense ratio,
             short investment horizon and low-interest rate risk.</p>
-          <div class="container">
+            <div class="sm:-ml-4 width-xll">
             <div
-              class="relative max-w-2xl p-8 mt-8 bg-gray-100 rounded-lg md:max-w-full how-to-list md:p-6 sm:py-8 sm:px-4">
+              class="relative max-w-2xl p-8 mt-8 bg-gray-100 rounded-lg sm:rounded-none md:max-w-full how-to-list md:p-6 sm:py-8 sm:px-4 sm:mt-12">
               <p
                 class="absolute inline-flex py-2 pl-6 pr-2 font-semibold leading-none text-white bg-green-400 how-to font-base">
                 How-To</p>
               <ol>
-                <li class="relative pb-6 pl-12 sm:pl-8">
+                <li class="relative pb-6 pl-12 sm:pl-10">
                   <h5 class="text-lg font-semibold text-gray-900 sm:text-base">Create an account</h5>
                   <p class="pt-2 text-base font-normal text-gray-800">Scripbox algorithms help you choose the best mutual
                     funds to invest now in India from over 8,000 choices based on their
                     historical performance</p>
                 </li>
-                <li class="relative pb-6 pl-12 sm:pl-8">
+                <li class="relative pb-6 pl-12 sm:pl-10">
                   <h5 class="text-lg font-semibold text-gray-900 sm:text-base">Complete paperless KYC</h5>
                   <p class="pt-2 text-base font-normal text-gray-800">Scripbox algorithms help you choose the best mutual
                     funds to invest now in India from over 8,000 choices based on their
                     historical performance</p>
                 </li>
-                <li class="relative pb-6 pl-12 sm:pl-8">
+                <li class="relative pb-6 pl-12 sm:pl-10">
                   <h5 class="text-lg font-semibold text-gray-900 sm:text-base">Invest online & transfer</h5>
                   <p class="pt-2 text-base font-normal text-gray-800">Scripbox algorithms help you choose the best mutual
                     funds to invest now in India from over 8,000 choices based on their
                     historical performance</p>
                 </li>
-                <li class="relative pl-12 sm:pl-8">
+                <li class="relative pl-12 sm:pl-10">
                   <h5 class="text-lg font-semibold text-gray-900 sm:text-base">Track your investments</h5>
                   <p class="pt-2 text-base font-normal text-gray-800">Scripbox algorithms help you choose the best mutual
                     funds to invest now in India from over 8,000 choices based on their
@@ -1068,11 +1070,8 @@
         
               </ol>
             </div>
-            <div class="flex justify-center max-w-2xl pt-16 md:max-w-full md:pt-10">
-              <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
-              <div class="w-2 h-2 mr-3 bg-gray-500 rounded-full"></div>
-              <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
             </div>
+            <hr class="relative pt-16 mx-auto border-0 md:max-w-full md:pt-10">
             <h2
               class="max-w-2xl pt-16 text-4xl font-bold leading-none text-gray-900 md:max-w-full font-ballinger md:pt-10 md:text-2xl">
               Conclusion</h2>
@@ -1085,61 +1084,64 @@
               accounts for close to 7% of the total assets in the Debt fund assets.</p>
             <h3 class="max-w-2xl pt-16 text-2xl font-bold leading-none text-gray-900 md:max-w-full md:pt-10 ">
               Frequently Asked Questions</h3>
-            <div class="max-w-2xl pt-4 pb-32 md:max-w-full faq-list md:pb-16">
-              <div class="px-3 py-4 shadow-sm faq-lists faq-active">
-                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">How are mutual
-                  funds better than FDs?</h4>
-                <div class="pt-4 faq-content default">
-                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
-                    your money, and meet your life goals.</p>
+            <div class="sm:-ml-4 width-xll">
+              <div class="max-w-2xl pt-4 pb-32 md:max-w-full faq-list md:pb-16">
+                <div class="px-3 py-4 border-b border-gray-200 faq-lists faq-active">
+                  <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">How are mutual
+                    funds better than FDs?</h4>
+                  <div class="pt-4 faq-content default">
+                    <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
+                      your money, and meet your life goals.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="px-3 py-4 shadow-sm faq-lists">
-                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">Are mutual
-                  funds better than stocks?</h4>
-                <div class="hidden pt-4 faq-content">
-                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
-                    your money,
-                    and meet your life goals.</p>
+                <div class="px-3 py-4 border-b border-gray-200 faq-lists">
+                  <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">Are mutual
+                    funds better than stocks?</h4>
+                  <div class="hidden pt-4 faq-content">
+                    <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
+                      your money,
+                      and meet your life goals.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="px-3 py-4 shadow-sm faq-lists">
-                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">How does
-                  Scripbox pick funds?</h4>
-                <div class="hidden pt-4 faq-content">
-                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
-                    your money,
-                    and meet your life goals.</p>
+                <div class="px-3 py-4 border-b border-gray-200 faq-lists">
+                  <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">How does
+                    Scripbox pick funds?</h4>
+                  <div class="hidden pt-4 faq-content">
+                    <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
+                      your money,
+                      and meet your life goals.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="px-3 py-4 shadow-sm faq-lists">
-                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">What is a
-                  Systematic Investment Plan (SIP)?</h4>
-                <div class="hidden pt-4 faq-content">
-                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
-                    your money,
-                    and meet your life goals.</p>
+                <div class="px-3 py-4 border-b border-gray-200 faq-lists">
+                  <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">What is a
+                    Systematic Investment Plan (SIP)?</h4>
+                  <div class="hidden pt-4 faq-content">
+                    <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
+                      your money,
+                      and meet your life goals.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="px-3 py-4 shadow-sm faq-lists">
-                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">How does
-                  Scripbox pick funds?</h4>
-                <div class="hidden pt-4 faq-content">
-                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
-                    your money,
-                    and meet your life goals.</p>
+                <div class="px-3 py-4 border-b border-gray-200 faq-lists">
+                  <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">How does
+                    Scripbox pick funds?</h4>
+                  <div class="hidden pt-4 faq-content">
+                    <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
+                      your money,
+                      and meet your life goals.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="px-3 py-4 faq-lists">
-                <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">When should I
-                  start investing?</h4>
-                <div class="hidden pt-4 faq-content">
-                  <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
-                    your money,
-                    and meet your life goals.</p>
+                <div class="px-3 py-4 faq-lists">
+                  <h4 class="relative text-base font-medium leading-5 text-gray-800 cursor-pointer faq-heading">When should I
+                    start investing?</h4>
+                  <div class="hidden pt-4 faq-content">
+                    <p class="text-base font-normal leading-tight text-gray-800">Algorithmically selected mutual funds to grow
+                      your money,
+                      and meet your life goals.</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="sm:-ml-4 width-xll">
             <div class="overflow-x-auto">
               <div class="inline-block min-w-full py-2 align-middle">
                 <div class="flex max-w-2xl mb-4 md:max-w-full tags">
@@ -1157,20 +1159,21 @@
                 </div>
               </div>
             </div>
-            <div class="max-w-2xl md:max-w-full source-list funds-list">
-              <div class="flex items-center py-3 border-t border-gray-200">
+            
+            <div class="max-w-2xl md:max-w-full source-list funds-list ">
+              <div class="flex items-center py-3 border-t border-gray-200 sm:px-4">
                 <figure class="pr-2">
                   <img src="images/svg/icon-calendar.svg" alt="Icon Calender">
                 </figure>
                 <p class="text-base font-normal leading-normal text-gray-600">Posted on Jul 24, 2020</p>
               </div>
-              <div class="flex items-center py-3 border-t border-gray-200">
+              <div class="flex items-center py-3 border-t border-gray-200 sm:px-4">
                 <figure class="pr-2">
                   <img src="images/svg/icon-time.svg" alt="Icon Time">
                 </figure>
                 <p class="text-base font-normal leading-normal text-gray-600">Last updated on Aug 20, 2020</p>
               </div>
-              <div class="border-t border-gray-200 faq-lists">
+              <div class="border-t border-gray-200 faq-lists sm:px-4">
                 <div class="relative flex items-center pt-3 cursor-pointer faq-heading">
                   <figure class="pr-2">
                     <img src="images/svg/icon-verified.svg" alt="Icon Verified">
@@ -1197,12 +1200,11 @@
                     </li>
                   </ol>
                 </div>
+                </div>
               </div>
-            </div>
-          </div>
         </div>
-        </div>
-        <div class="container">
+        
+        <div class="sm:-ml-4 width-xll">
         <div class="max-w-2xl px-8 py-6 mt-12 bg-gray-100 rounded-lg md:max-w-full sm:pt-0 sm:rounded-none">
           <div class="flex items-center sm:flex-wrap sm:justify-center ">
             <figure class="w-full max-w-xm5 sm:-mt-4">
@@ -1217,28 +1219,50 @@
                   class="px-3 py-2 text-sm font-medium leading-tight text-gray-800 transition duration-200 ease-in bg-white rounded-md sm:w-full sm:text-center hover:bg-black hover:text-white">See
                   all articles by
                   Sandeep</a>
-                <div class="flex items-center sm:hidden">
-                  <a href="#" class="pl-5">
-                    <figure>
-                      <img src="images/svg/icon-twitter.svg" alt="Icon Twitter">
-                    </figure>
-                  </a>
-                  <a href="#" class="pl-5">
-                    <figure>
-                      <img src="images/svg/icon-facebook.svg" alt="Icon Facebook">
-                    </figure>
-                  </a>
-                  <a href="#" class="pl-5">
-                    <figure>
-                      <img src="images/svg/icon-linked-in.svg" alt="Icon Linked-in">
-                    </figure>
-                  </a>
-                </div>
+              <div class="flex items-center sm:hidden">
+                <a href="#" class="pl-5">
+                  <figure>
+                    <svg class="ease-in delay-200 fill-current transision" height="18" viewBox="0 0 20 18" width="20"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <clipPath id="a">
+                        <path d="m0 .5h20v17h-20z"></path>
+                      </clipPath>
+                      <g clip-path="url(#a)">
+                        <path
+                          d="m19.2664 1.65057c-.7791.46526-1.64.80526-2.56.98421-.3725-.40312-.8264-.72529-1.3327-.94592-.5062-.22062-1.0537-.33484-1.6073-.33534-2.2228 0-4.02731 1.81989-4.02731 4.06568 0 .31763.03455.62632.10364.92516-3.34727-.17-6.31545-1.7859-8.30364-4.25-.35876.62442-.546708 1.32981-.545451 2.04716 0 1.4101.710911 2.65468 1.792731 3.38389-.64179-.02134-1.26877-.19541-1.827277-.50732v.05011c0 1.97111 1.390907 3.6147 3.234547 3.9869-.33818.0958-.69455.1432-1.06182.1432-.25449.0004-.50841-.0236-.75818-.0716.51363 1.615 2 2.7916 3.76364 2.822-1.41604 1.1273-3.18237 1.742-5.00364 1.7412-.324547 0-.645456-.0179-.960911-.0555 1.832181 1.1904 3.979171 1.825 6.174541 1.8253 7.41093 0 11.46363-6.1943 11.46363-11.56897 0-.17627-.0045-.35253-.0109-.52611.7912-.5779 1.4716-1.28989 2.0091-2.10263-.7339.32716-1.514.54257-2.3136.63884.8466-.51499 1.4756-1.31387 1.7709-2.24937"
+                          fill="#737373"></path>
+                      </g>
+                    </svg>
+                  </figure>
+                </a>
+                <a href="#" class="pl-5">
+                  <figure>
+                    <svg class="ease-in delay-200 fill-current transision" height="20" viewBox="0 0 20 20" width="20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="m19 15c0 2.2091-1.7909 4-4 4h-1.5011v-6.8109h2.376l.36-2.91853h-2.7343v-1.51886c0-.77828.2143-1.40142 1.3645-1.40142h1.6346v-2.31943c-.0829-.00569-.1733-.01244-.2712-.01974-.4921-.03671-1.1716-.08741-2.0174-.08741-2.1111 0-3.7114 1.25572-3.7114 3.56229v1.78543h-2.49941v2.91767h2.49941v6.8109h-5.4997c-2.20914 0-4-1.7909-4-4v-10c0-2.20914 1.79086-4 4-4h10c2.2091 0 4 1.79086 4 4z"
+                        fill="#737373"></path>
+                    </svg>
+                  </figure>
+                </a>
+                <a href="#" class="pl-5">
+                  <figure>
+                    <svg class="ease-in delay-200 fill-current transision" height="18" viewBox="0 0 20 18" width="20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path clip-rule="evenodd"
+                        d="m15.0525 5.655c2.7707 0 4.9475 1.758 4.9475 5.546v6.799h-4.4202v-6.328c0-1.656-.6909-2.787-2.2121-2.787-1.1626 0-1.8091.763-2.1101 1.499-.1132.264-.096.631-.096.999v6.617h-4.37877s.05656-11.209 0-12.228h4.37877v1.919c.2586-.839 1.6586-2.036 3.8909-2.036zm-14.54846.117h3.89798v12.228h-3.89798zm1.87677-5.772c1.43838 0 2.32323.913 2.35151 2.12 0 1.184-.91313 2.122-2.37777 2.122h-.02829c-1.411108 0-2.32626-.934-2.32626-2.119 0-1.208.941414-2.123 2.38081-2.123z"
+                        fill="#737373" fill-rule="evenodd"></path>
+                    </svg>
+                  </figure>
+                </a>
               </div>
-            </div>
+              </div>
+          </div>
           </div>
         </div>
-        <div
+        </div>
+        <div class="sm:-ml-4 width-xll">  
+          <div
           class="relative flex justify-between max-w-2xl px-8 pb-10 mt-16 bg-blue-100 rounded-lg shadow-lg md:max-w-full subscribe sm:flex-wrap sm:pb-6 sm:px-4 sm:rounded-none">
           <div class="w-1/2 sm:w-full sm:flex sm:flex-wrap sm:justify-center sm:text-center">
             <a href="#"
@@ -1262,106 +1286,193 @@
               important to us</p>
           </div>
           </div>
-          <div
-            class="relative flex justify-between max-w-2xl px-8 pb-10 mt-16 bg-gray-100 rounded-lg tab:max-w-full subscribe mob:flex-wrap mob:pb-6 mob:px-4">
-            <div class="w-full mx-auto text-center max-w-mdd mob:max-w-full">
+        </div>
+        <div class="sm:-ml-4 width-xll">
+        <div
+          class="relative flex justify-between max-w-2xl px-8 pb-10 mt-16 bg-gray-100 rounded-lg sm:rounded-none tab:max-w-full subscribe mob:flex-wrap mob:pb-6 mob:px-4">
+          <div class="w-full mx-auto text-center max-w-mdd mob:max-w-full">
+            <a href="#"
+              class="table px-3 py-2 mx-auto -mt-3 text-xs font-semibold leading-tight tracking-wide text-white uppercase transition duration-200 ease-in bg-gray-900 rounded-md shadow-lg btn-invesment hover:bg-gray-800">Investment
+              Insights</a>
+            <h3 class="pt-6 font-serif text-2xl font-extrabold leading-tight text-gray-900 mob:text-2xl">Personal Finance &
+              Investment Insights</h3>
+            <div class="flex mt-4 sm:flex-col">
+              <input type="email" id="email" name="email"
+                class="w-full px-4 py-3 font-normal leading-none text-gray-500 placeholder-gray-500 rounded-md shadow-lg focus:outline-none mob:w-full"
+                placeholder="Email Address">
               <a href="#"
-                class="table px-3 py-2 mx-auto -mt-3 text-xs font-semibold leading-tight tracking-wide text-white uppercase transition duration-200 ease-in bg-gray-900 rounded-md shadow-lg btn-invesment hover:bg-gray-800">Investment
-                Insights</a>
-              <h3 class="pt-6 font-serif text-2xl font-extrabold leading-tight text-gray-900 mob:text-2xl">Personal Finance &
-                Investment Insights</h3>
-              <div class="flex mt-4 mob:flex-wrap">
-                <input type="email" id="email" name="email"
-                  class="w-full px-4 py-3 font-normal leading-none text-gray-500 placeholder-gray-500 rounded-md shadow-lg focus:outline-none mob:w-full"
-                  placeholder="Email Address">
-                <a href="#"
-                  class="block p-3 ml-3 text-base font-semibold leading-tight tracking-wide text-center text-white transition duration-200 ease-in bg-blue-600 rounded-md mob:w-full mob:ml-0 mob:mt-4 hover:bg-blue-700">Subscribe</a>
-              </div>
-              <p class="pt-2 text-base font-normal leading-normal text-gray-600">Our weekly newsletter with finance tips and
-                investment insights from our experts</p>
-          
-              <p class="pt-2 text-xs font-normal leading-normal text-gray-500">Your <a href="#" class="underline">privacy</a> is
-                important to us</p>
+                class="block p-3 ml-3 text-base font-semibold leading-tight tracking-wide text-center text-white transition duration-200 ease-in bg-blue-600 rounded-md sm:mb-0 sm:w-full sm:ml-0 sm:mt-3 hover:bg-blue-700">Subscribe</a>
             </div>
+            <p class="pt-2 text-base font-normal leading-normal text-gray-600">Our weekly newsletter with finance tips and
+              investment insights from our experts</p>
+        
+            <p class="pt-2 text-xs font-normal leading-normal text-gray-500">Your <a href="#" class="underline">privacy</a> is
+              important to us</p>
           </div>
-      </div>
-</section>
-          <section class="py-20 lg:pb-16 sm:pb-10">
-            <div class="container px-4 ">
-      <div class="flex items-center justify-between py-8 border-t border-b border-gray-200 related-topics md:flex-wrap md:py-6">
-        <h3 class="text-lg font-semibold leading-none text-gray-800 whitespace-no-wrap">Related Topics</h3>
-        <div class="pl-6 overflow-x-auto md:pl-0">
-          <div class="inline-block min-w-full py-2 align-middle">
-        <div class="flex">
-          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:text-white hover:bg-black">Goals</a>
-          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:text-white hover:bg-black">Inflation</a>
-          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:text-white hover:bg-black">Investing Mistakes</a>
-          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:text-white hover:bg-black">Personal Growth</a>
-          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:text-white hover:bg-black">Coffee Can</a>
-          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:text-white hover:bg-black">Money</a>
-          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:text-white hover:bg-black">SIP</a>
-          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:text-white hover:bg-black">Investing</a>
-          <a href="#" class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:text-white hover:bg-black">Personal Finance</a>
         </div>
         </div>
         </div>
-      </div>
-      <div class="pt-4 pb-12 sm:pb-6">
-        <h3 class="text-lg font-semibold leading-none text-gray-800 ">Continue Reading</h3>
-        <div class="flex justify-between lg:flex-wrap lg:justify-center">
-          <div class="w-full mt-4 mr-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post md:mr-0 lg:mt-10 sm:mt-6 sm:max-w-full lg:max-w-xs">
-            <a href="#"> <figure class="overflow-hidden max-h-lg sm:max-h-xl">
-              <img src="images/post-feature-img.png" alt="Post Feature Image" class="w-full">
-            </figure>
-            </a>
-            <div class="p-4">
-              <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600"><a href="#">Floater Funds- Meaning, Tyes, Features, Limitation, etc</a></h4>
-              <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the total profit earned is called a capital gain. Capital is nothing but the
-              principal investment that was made to purchase your mutual fund units. Let’s look at an example to understand what
-              mutual funds capital gains mean.</p>
-            </div>
           </div>
-          <div class="w-full mt-4 mr-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post md:mr-0 lg:mt-10 sm:mt-6 sm:max-w-full lg:max-w-xs">
-            <a href="#"> <figure class="overflow-hidden max-h-lg sm:max-h-xl">
-              <img src="images/post-feature-img2.png" alt="Post Feature Image" class="w-full">
-            </figure>
-            </a>
-            <div class="p-4">
-              
-                <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600"><a href="#">What is Long Term Capital Gain Tax?
-                </a></h4>
-              <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the total profit earned is called a capital gain. Capital is nothing but the
-              principal investment that was made to purchase your mutual fund units. Let’s look at an example to understand what
-              mutual funds capital gains mean.</p>
-            </div>
-          </div>
-          <div class="w-full mt-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post md:mr-0 lg:mt-10 sm:mt-6 sm:max-w-full lg:max-w-xs">
-            <a href="#"> <figure class="overflow-hidden max-h-lg sm:max-h-xl">
-              <img src="images/post-feature-img3.png" alt="Post Feature Image" class="w-full">
-            </figure>
-            </a>
-            <div class="p-4">
-              
-                <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600"><a href="#">A Complete Guide to Mid Cap Mutual Funds
-              </a></h4>
-              <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the total
-                profit earned is called a capital gain. Capital is nothing but the
-                principal investment that was made to purchase your mutual fund units. Let’s look at an example to understand what
-                mutual funds capital gains mean.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex items-center justify-center py-6 border-t border-b border-gray-200 cursor-pointer sm:py-4">
-        <figure>
-          <img src="images/icon-comments.png" alt="Comments Icon" >
-        </figure>
-        <h5 class="pl-3 pr-2 text-lg font-semibold leading-none text-gray-800">Show comments <span class="font-normal">(24)</span></h5>
-        <figure>
-          <img src="images/svg/icon-down.svg" alt="Down Icon">
-        </figure>
+         
       </div>
     </div>
-  </section>
+</section>
+        <section class="py-20 lg:pb-16 sm:py-4">
+          <div class="container px-4 mx-auto">
+            <div
+              class="flex items-center justify-between py-8 border-t border-b border-gray-200 related-topics md:flex-wrap md:py-6 sm:-ml-4 width-xll">
+              <h3 class="text-lg font-semibold leading-none text-gray-800 whitespace-no-wrap sm:pl-4">Related Topics</h3>
+              <div class="pl-6 overflow-x-auto md:pl-0 ">
+                <div class="inline-block min-w-full py-2 align-middle">
+                  <div class="flex">
+                    <a href="#"
+                      class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:bg-black hover:text-white">Goals</a>
+                    <a href="#"
+                      class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:bg-black hover:text-white">Inflation</a>
+                    <a href="#"
+                      class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:bg-black hover:text-white">Investing
+                      Mistakes</a>
+                    <a href="#"
+                      class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:bg-black hover:text-white">Personal
+                      Growth</a>
+                    <a href="#"
+                      class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:bg-black hover:text-white">Coffee
+                      Can</a>
+                    <a href="#"
+                      class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:bg-black hover:text-white">Money</a>
+                    <a href="#"
+                      class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:bg-black hover:text-white">SIP</a>
+                    <a href="#"
+                      class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:bg-black hover:text-white">Investing</a>
+                    <a href="#"
+                      class="px-3 py-2 mr-2 text-sm font-medium leading-none text-gray-800 whitespace-no-wrap transition duration-200 ease-in bg-gray-100 rounded-md hover:bg-black hover:text-white">Personal
+                      Finance</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-4 pb-12 sm:pb-6">
+              <h3 class="text-lg font-semibold leading-none text-gray-800 ">Continue Reading</h3>
+              <div class="flex flex-wrap xl:justify-center">
+                <a href="#"
+                  class="w-full mt-4 mr-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post md:mr-0 lg:mt-10 sm:mt-6 sm:max-w-full lg:max-w-md1">
+                  <figure class="overflow-hidden max-h-lg sm:max-h-xl">
+                    <img src="images/post-feature-img.png" alt="Post Feature Image" class="w-full">
+                  </figure>
+                  <div class="p-4">
+                    <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">Floater
+                      Funds- Meaning, Tyes, Features, Limitation, etc</h4>
+                    <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+                      total profit earned is called a capital gain. Capital is nothing but the
+                      principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+                      understand
+                      what
+                      mutual funds capital gains mean.</p>
+                  </div>
+                </a>
+                <a href="#"
+                  class="w-full mt-4 mr-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post md:mr-0 lg:mt-10 sm:mt-6 sm:max-w-full lg:max-w-md1">
+                  <figure class="overflow-hidden max-h-lg sm:max-h-xl">
+                    <img src="images/post-feature-img2.png" alt="Post Feature Image" class="w-full">
+                  </figure>
+                  <div class="p-4">
+                    <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">What is
+                      Long Term Capital Gain Tax?
+                    </h4>
+                    <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+                      total profit earned is called a capital gain. Capital is nothing but the
+                      principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+                      understand
+                      what
+                      mutual funds capital gains mean.</p>
+                  </div>
+                </a>
+                <a href="#"
+                  class="w-full mt-4 mr-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post md:mr-0 lg:mt-10 sm:mt-6 sm:max-w-full lg:max-w-md1">
+                  <figure class="overflow-hidden max-h-lg sm:max-h-xl">
+                    <img src="images/post-feature-img3.png" alt="Post Feature Image" class="w-full">
+                  </figure>
+                  <div class="p-4">
+                    <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">A Complete
+                      Guide to Mid Cap Mutual Funds
+                    </h4>
+                    <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+                      total profit earned is called a capital gain. Capital is nothing but the
+                      principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+                      understand
+                      what
+                      mutual funds capital gains mean.</p>
+                  </div>
+                </a>
+                <a href="#"
+                  class="w-full mt-10 mr-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post md:mr-0 lg:mt-10 sm:mt-6 sm:max-w-full lg:max-w-md1">
+                  <figure class="overflow-hidden max-h-lg sm:max-h-xl">
+                    <img src="images/post-feature-img4.png" alt="Post Feature Image" class="w-full">
+                  </figure>
+                  <div class="p-4">
+                    <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">A Complete
+                      Guide to Mid
+                      Cap Mutual Funds
+                    </h4>
+                    <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+                      total profit earned is called a capital gain. Capital is nothing but the
+                      principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+                      understand
+                      what
+                      mutual funds capital gains mean.</p>
+                  </div>
+                </a>
+                <a href="#"
+                  class="w-full mt-10 mr-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post md:mr-0 lg:mt-10 sm:mt-6 sm:max-w-full lg:max-w-md1">
+                  <figure class="overflow-hidden max-h-lg sm:max-h-xl">
+                    <img src="images/post-feature-img5.png" alt="Post Feature Image" class="w-full">
+                  </figure>
+                  <div class="p-4">
+                    <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">A Complete
+                      Guide to Mid
+                      Cap Mutual Funds
+                    </h4>
+                    <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+                      total profit earned is called a capital gain. Capital is nothing but the
+                      principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+                      understand
+                      what
+                      mutual funds capital gains mean.</p>
+                  </div>
+                </a>
+                <a href="#"
+                  class="w-full mt-10 mr-4 overflow-hidden max-w-mdd hover:shadow-lg blog-post md:mr-0 lg:mt-10 sm:mt-6 sm:max-w-full lg:max-w-md1">
+                  <figure class="overflow-hidden max-h-lg sm:max-h-xl">
+                    <img src="images/post-feature-img6.png" alt="Post Feature Image" class="w-full">
+                  </figure>
+                  <div class="p-4">
+                    <h4 class="text-xl font-bold leading-tight text-gray-900 font-ballinger hover:text-blue-600">A Complete
+                      Guide to Mid
+                      Cap Mutual Funds
+                    </h4>
+                    <p class="pt-2 text-sm font-normal leading-relaxed text-gray-600">When you sell your assets at a profit, the
+                      total profit earned is called a capital gain. Capital is nothing but the
+                      principal investment that was made to purchase your mutual fund units. Let’s look at an example to
+                      understand
+                      what
+                      mutual funds capital gains mean.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-center py-6 transition ease-in delay-200 border-t border-b border-gray-200 cursor-pointer sm:py-4 hover:bg-gray-100">
+              <figure>
+                <img src="images/icon-comments.png" alt="Comments Icon">
+              </figure>
+              <h5 class="pl-3 pr-2 text-lg font-semibold leading-none text-gray-800 sm:text-base">Show comments <span
+                  class="font-normal">(24)</span></h5>
+              <figure>
+                <img src="images/svg/icon-down.svg" alt="Down Icon">
+              </figure>
+            </div>
+          </div>
+          </div>
+        </section>
 </body>
 </html>

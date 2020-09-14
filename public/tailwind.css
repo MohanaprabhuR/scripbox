@@ -5,6 +5,51 @@
 
 /* Fonts */
 @font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.eot');
+    src: url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Inter-Regular.woff2') format('woff2'), url('../fonts/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Iner';
+    src: url('../fonts/Inter-Bold.eot');
+    src: url('../fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Inter-Bold.woff2') format('woff2'), url('../fonts/Inter-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.eot');
+    src: url('../fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Inter-Medium.woff2') format('woff2'), url('../fonts/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.eot');
+    src: url('../fonts/Inter-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Inter-SemiBold.woff2') format('woff2'), url('../fonts/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Cambon';
+    src: url('../fonts/Cambon-ExtraBold.eot');
+    src: url('../fonts/Cambon-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Cambon-ExtraBold.woff2') format('woff2'), url('../fonts/Cambon-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
     font-family: 'Ballinger';
     src: url('../fonts/Ballinger-Regular.eot');
     src: url('../fonts/Ballinger-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Ballinger-Regular.woff2') format('woff2'), url('../fonts/Ballinger-Regular.woff') format('woff');
@@ -14,11 +59,11 @@
 }
 
 @font-face {
-    font-family: 'Ballinger-RegularItalic';
+    font-family: 'Ballinger';
     src: url('../fonts/Ballinger-RegularItalic.eot');
     src: url('../fonts/Ballinger-RegularItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Ballinger-RegularItalic.woff2') format('woff2'), url('../fonts/Ballinger-RegularItalic.woff') format('woff');
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
     font-stretch: normal;
 }
 
@@ -39,9 +84,6 @@
     font-family: 'Ballinger', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.font-regularitalic {
-    font-family: 'Ballinger-RegularItalic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
 
 /* Blockquote Style */
 blockquote::before {
@@ -64,6 +106,7 @@ blockquote::before {
     left: 0;
     top: 0;
 }
+
 
 /* List Style */
 .list-style li::before {
@@ -92,6 +135,21 @@ ol>li::before {
     top: 2px;
     text-align: right;
     font-weight: 600;
+}
+
+hr::after {
+    content: '';
+    position: absolute;
+    background-image: url('../images/svg/hr-dot.svg');
+    width: 42px;
+    height: 6px;
+    background-size: contain;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 /* How-to */
@@ -128,6 +186,22 @@ ol>li::before {
     top: -4px;
 }
 
+@media (max-width: 580px) {
+    .how-to {
+        left: 10px;
+        top: -32px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+
+    .how-to {
+        left: 0px;
+        top: -20px;
+    }
+}
+
 /* Faq List */
 .faq-lists h4::after,
 .funds-list .faq-heading::after {
@@ -144,6 +218,15 @@ ol>li::before {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+}
+
+.funds-list .faq-heading::after {
+    top: auto;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
 }
 
 .faq-active h4::after,
@@ -200,6 +283,29 @@ ol>li::before {
     -o-border-radius: 6px 6px 0 0;
 }
 
+.blog-post:hover h4,
+.blog-post:hover h6 {
+    color: #0A5AC2;
+}
+
+@media (max-width: 580px) {
+
+    .blog-post h4 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .blog-post:hover figure {
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+}
 
 
 /* Header */
@@ -215,7 +321,7 @@ ol>li::before {
     width: 220px;
 }
 
-.header-overlay .nav-barand p {
+.header-overlay .nav-brand p {
     position: relative;
     opacity: 1;
     transform: translateY(0);
@@ -228,7 +334,7 @@ ol>li::before {
     -moz-transition: all 0.25s;
     -ms-transition: all 0.25s;
     -o-transition: all 0.25s;
-
+    left: 0;
 }
 
 .top-bar {
@@ -281,6 +387,35 @@ ol>li::before {
     -o-transform: translateY(17px);
 }
 
+.nav-brand p {
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+}
+
+.input-group svg:hover path {
+    fill: #fff;
+}
+.margin-top{
+    margin-top: 2.875rem;
+}
+
+
+@media(max-width:767px) {
+
+    .search-result .search-mobile,
+    .search-result .nav-brand {
+        display: none;
+    }
+
+    .search-result .search-body,
+    .search-result .search-control {
+        width: 100%;
+    }
+}
+
 /* Header Style End */
 
 .table-wrapper tr>th:first-child::after,
@@ -295,6 +430,8 @@ ol>li::before {
 
 }
 
+/* Fund Card */
+
 .fund-card-list:hover:before {
     opacity: 1;
 }
@@ -303,9 +440,9 @@ ol>li::before {
     opacity: 0;
     content: "";
     position: absolute;
-    top: -1px;
+    top: 0;
     left: -10px;
-    height: calc(100% - 1px);
+    height: calc(100% - -1px);
     width: calc(100% + 18px);
     border: 1px solid #d9d9d9;
     border-radius: 6px;
@@ -323,17 +460,6 @@ ol>li::before {
     width: calc(100% + 32px) !important;
 }
 
-@media (max-width: 1024px) {
-    .search-result .input-group input {
-        width: 80px;
-    }
-
-    .how-to {
-        left: 0px;
-        top: -20px;
-    }
-}
-
 @media (max-width: 580px) {
     .funds-list ol>li::before {
         width: 20px;
@@ -347,11 +473,28 @@ ol>li::before {
 
     }
 
-    .search-result .input-group input {
-        width: 100px;
-    }
-
     .top-search-scroll {
         width: calc(100% + 32px) !important;
     }
+
+    .width-xll {
+        width: calc(100% + 32px);
+    }
+
+    .fund-card-list::before {
+        width: calc(100% + 0px);
+    }
 }
+
+/* End FundCard */
+svg:hover path {
+    fill: #000;
+}
+
+/* Pagination */
+.pagination .active {
+    background-color: #1971E4;
+    color: #fff;
+}
+
+/* End Pagination */
